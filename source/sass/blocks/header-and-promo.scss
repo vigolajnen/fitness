@@ -1,0 +1,11 @@
+.header-and-promo {
+  background: $bg-gradient;
+
+  @media (max-width: $desktop) {
+    background: $bg-gradient-table;
+  }
+
+  @media (max-width: $table) {
+    background: $bg-gradient-mob;
+  }
+}

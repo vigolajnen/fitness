@@ -1,0 +1,27 @@
+.promo {
+  position: relative;
+
+  width: 100%;
+  box-sizing: border-box;
+
+  & h1 {
+    font-family: $mainFontTitle;
+    font-weight: bold;
+    font-size: 109px;
+    line-height: 109px;
+    text-align: right;
+    letter-spacing: 0.03em;
+
+    color: $default-color;
+
+    @media (max-width: $desktop) {
+      font-size: 86px;
+      line-height: 86px;
+    }
+
+    @media (max-width: $table) {
+      font-size: 78px;
+      line-height: 78px;
+    }
+  }
+}

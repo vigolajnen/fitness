@@ -1,0 +1,42 @@
+.page {
+  position: relative;
+
+  min-height: 100%;
+
+  margin: 0;
+  padding: 0;
+  font-family: $mainFont;
+  font-size: $mainFontSize;
+  line-height: $mainLineHeight;
+  color: $primary-color;
+  scroll-behavior: smooth;
+
+  
+
+  & h2 {
+    font-family: $mainFontTitle;
+    font-weight: bold;
+    font-size: 49px;
+    line-height: 49px;
+    letter-spacing: 0.03em;
+    color: $primary-color;
+
+    @media (max-width: 1199px) {
+      font-size: 42px;
+      line-height: 42px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
+}
+
+@supports (display: flex) {
+  .page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
