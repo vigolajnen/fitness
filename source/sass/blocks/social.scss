@@ -6,6 +6,23 @@
   margin: 0;
   list-style: none;
 
+  &--vert {
+    transform: rotate(-90deg);
+
+    & .social__item {
+      margin-bottom: 11px;
+      margin-right: 0;
+    }
+  }
+
+  &__item {
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
 
   &__link {
     &:focus,

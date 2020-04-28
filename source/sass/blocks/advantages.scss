@@ -1,0 +1,151 @@
+.advantages {
+  padding: 120px 0;
+  background-color: #f8f9fc;
+
+  @media (max-width: $desktop) {
+    padding: 100px 0;
+  }
+
+  @media (max-width: $desktop) {
+    padding: 70px 0;
+  }
+
+  & h2 {
+    margin-bottom: 80px;
+    text-align: center;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: 1fr 240px 1fr;
+    grid-auto-rows: 1fr 1fr;
+    grid-gap: 1em;
+
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 1em 240px 1fr;
+    -ms-grid-rows: 1fr 1em 1fr;
+    
+  }
+
+  &__item {
+    // width: calc(50% - 120px);
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    &:nth-child(1) {
+      // grid-area: a;
+
+      -ms-grid-column: 1;
+      -ms-grid-row: 1;
+    }
+    &:nth-child(2) {
+      // grid-area: c;
+
+      -ms-grid-column: 1;
+      -ms-grid-row: 2;
+    }
+    &:nth-child(4) {
+      // grid-area: d;
+
+      -ms-grid-column: 3;
+      -ms-grid-row: 1;
+    }
+    &:nth-child(5) {
+      // grid-area: e;
+
+      -ms-grid-column: 3;
+      -ms-grid-row: 2;
+    }
+
+    &--center-blue {
+
+      -ms-grid-column: 2;
+      -ms-grid-row: 1;
+
+
+      grid-column-start: 2;
+
+      grid-row-start: 1;
+      grid-row-end: span 2;
+
+      padding: 65px 30px;
+      flex-direction: column;
+      align-items: center;
+      background-color: #1c3374;
+      color: $default-color;
+      text-align: center;
+
+      & .advantages__num {
+        margin-bottom: 50px;
+        color: inherit;
+
+        font-style: normal;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 150%;
+        & span {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 74px;
+          line-height: 150%;
+          background: $default-color;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+
+      & p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 150%;
+      }
+    }
+
+    & h3 {
+      margin: 0;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 150%;
+    }
+
+    & p {
+      margin: 0;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 140%;
+    }
+  }
+
+  &__num {
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #2e35ac;
+
+    & span {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 71px;
+      line-height: 150%;
+      background: linear-gradient(111.72deg, #ed0233 5.6%, #003eb7 95.31%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &__info {
+    width: 70%;
+  }
+}

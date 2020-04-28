@@ -1,0 +1,84 @@
+.stocks {
+  padding: 120px 0;
+
+  @media (max-width: $desktop) {
+    padding: 100px 0;
+  }
+
+  @media (max-width: $desktop) {
+    padding: 70px 0;
+  }
+
+  & h2 {
+    margin-bottom: 62px;
+    text-align: center;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr;
+    grid-gap: 1em;
+
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 1em 1fr;
+    -ms-grid-rows: 1fr 1em 1fr;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+    width: 100%;
+    border: 5px solid transparent;
+    border-image-source: url("../img/promo/bg-gradient.svg");
+    border-image-slice: 100%;
+    border-image-width: 7px;
+    border-image-repeat: round;
+    border-image-slice: 10;
+    box-sizing: border-box;
+
+    &:nth-child(2) {
+      -ms-grid-column: 2;
+      -ms-grid-row: 1;
+    }
+    &:nth-child(3) {
+      -ms-grid-column: 2;
+      -ms-grid-row: 2;
+    }
+
+    &--preview {
+      flex-direction: row;
+      padding: 0;
+      border: none;
+      -ms-grid-column: 1;
+      -ms-grid-row: 1;
+
+      grid-column: 1;
+
+      grid-row-start: 1;
+      grid-row-end: span 2;
+    }
+
+    & a {
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: auto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 16px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+
+      color: #1c3374;
+
+      &:focus,
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}

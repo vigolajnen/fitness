@@ -1,0 +1,60 @@
+.form-and-contacts {
+  position: relative;
+  border-top: 1px solid #74819c;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: $primary-color;
+  }
+
+  @media (max-width: $desktop) {
+    &::before {
+      background-color: transparent;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+  }
+
+  &__item {
+    position: relative;
+    padding: 70px 0;
+    width: 50%;
+
+    @media (max-width: 769px) {
+      width: 100%;
+    }
+  }
+
+  & h3 {
+    margin: 0 0 57px 0;
+    font-family: $mainFontTitle;
+    font-weight: bold;
+    font-size: 49px;
+    line-height: 49px;
+    letter-spacing: 0.03em;
+    color: $primary-color;
+    text-transform: uppercase;
+
+    @media (max-width: $desktop) {
+      margin-bottom: 50px;
+      font-size: 42px;
+      line-height: 42px;
+    }
+
+    @media (max-width: $table) {
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
+}

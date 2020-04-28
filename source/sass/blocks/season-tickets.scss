@@ -1,0 +1,50 @@
+.season-tickets {
+  padding: 120px 0;
+  background-color: #f8f9fc;
+
+  @media (max-width: $desktop) {
+    padding: 100px 0;
+  }
+
+  @media (max-width: $desktop) {
+    padding: 70px 0;
+  }
+
+  &__container {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -46%;
+      right: 0;
+      width: 285px;
+      height: 500px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url("../img/season-tickets/bg.png");
+    }
+  }
+
+  & h2 {
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  & img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: calc(100% / 3 - 30px);
+    box-sizing: border-box;
+  }
+}

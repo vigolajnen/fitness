@@ -1,0 +1,91 @@
+.trainers {
+  padding-bottom: 90px;
+
+  @media (max-width: $desktop) {
+    padding-bottom: 70px;
+  }
+
+  @media (max-width: $desktop) {
+    padding-bottom: 40px;
+  }
+
+  & h2 {
+    margin-bottom: 50px;
+  }
+
+  &__inner {
+    height: 0;
+    opacity: 0;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 80px;
+    width: 100%;
+    text-align: center;
+    background: rgba(16, 38, 84, 0.89);
+
+    color: #b6bdcc;
+    box-sizing: border-box;
+
+    & ul {
+      padding-top: 15px;
+      color: $default-color;
+      text-align: left;
+      padding-right: 46px;
+    }
+
+    & li {
+      margin-bottom: 24px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 150%;
+    }
+  }
+
+  &__slide {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    min-height: 296px;
+    max-width: 260px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    &:hover {
+      & .trainers__inner {
+        height: 100%;
+        opacity: 1;
+        transition: opacity 1s;
+      }
+
+      & h3 {
+        margin-top: 58px;
+      }
+    }
+
+    & h3 {
+      position: relative;
+      z-index: 3;
+      margin: 0;
+      margin-top: auto;
+      margin-bottom: 26px;
+      color: $default-color;
+      text-align: center;
+    }
+
+    & img {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}

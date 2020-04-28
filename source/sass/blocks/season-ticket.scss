@@ -1,0 +1,103 @@
+.season-ticket {
+  padding: 50px 69px 60px;
+  text-align: center;
+  background-color: $default-color;
+  border: 5px solid transparent;
+
+  &:hover {
+    border-image-source: url("../img/promo/bg-gradient.svg");
+    border-image-slice: 100%;
+    border-image-width: 7px;
+    border-image-repeat: round;
+    border-image-slice: 10;
+    transition: 1s;
+
+    & a {
+      border-color: $default-color;
+      color: $default-color;
+      background: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
+    }
+  }
+
+  & a {
+    display: block;
+    padding: 23px 45px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: #102654;
+    border: 2px solid #1c3374;
+
+    &:focus,
+    &:hover {
+      background: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
+    }
+  }
+
+  &__time {
+    margin-bottom: 60px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+
+    color: #495a7d;
+  }
+
+  &__price {
+    position: relative;
+    z-index: 1;
+    padding-top: 4px;
+    padding-left: 27px;
+    margin-bottom: 37px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 150%;
+    text-align: left;
+
+    color: #103aae;
+
+    &::before {
+      content: attr(data-price);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      z-index: -1;
+
+      font-style: normal;
+      font-weight: bold;
+      font-size: 100px;
+      line-height: 150%;
+      /* or 150px */
+
+      display: flex;
+      align-items: center;
+
+      color: #e8e8e8;
+
+      opacity: 0.48;
+    }
+  }
+
+  
+
+  & h3 {
+    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 45px;
+
+    text-transform: capitalize;
+
+    color: #102654;
+  }
+}

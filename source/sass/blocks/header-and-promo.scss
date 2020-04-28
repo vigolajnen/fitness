@@ -1,7 +1,9 @@
 .header-and-promo {
+  padding: 31px 0 46px;
   background: $bg-gradient;
 
   @media (max-width: $desktop) {
+    padding-top: 40px;
     background: $bg-gradient-table;
   }
 
