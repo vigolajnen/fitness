@@ -97,6 +97,7 @@ gulp.task("copy", function () {
 
 gulp.task('scripts', function() {
   return gulp.src([
+    './js/swiper.js',
     './js/svg4everybody.js',
     './js/mask.js'
   ])
