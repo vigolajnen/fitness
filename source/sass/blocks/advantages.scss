@@ -24,7 +24,6 @@
     display: -ms-grid;
     -ms-grid-columns: 1fr 1em 240px 1fr;
     -ms-grid-rows: 1fr 1em 1fr;
-    
   }
 
   &__item {
@@ -60,10 +59,8 @@
     }
 
     &--center-blue {
-
       -ms-grid-column: 2;
       -ms-grid-row: 1;
-
 
       grid-column-start: 2;
 
@@ -91,8 +88,6 @@
           font-size: 74px;
           line-height: 150%;
           background: $default-color;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
         }
       }
 
@@ -139,13 +134,26 @@
       font-weight: bold;
       font-size: 71px;
       line-height: 150%;
-      background: linear-gradient(111.72deg, #ed0233 5.6%, #003eb7 95.31%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      background: $default-color;
     }
   }
 
   &__info {
     width: 70%;
+  }
+}
+
+@supports (background-clip: text) {
+  .advantages__item .advantages__num span {
+    background: linear-gradient(111.72deg, #ed0233 5.6%, #003eb7 95.31%);
+
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .advantages__item--center-blue .advantages__num span {
+    background: $default-color;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
