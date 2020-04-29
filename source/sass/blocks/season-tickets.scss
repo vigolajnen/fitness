@@ -6,7 +6,7 @@
     padding: 100px 0;
   }
 
-  @media (max-width: $desktop) {
+  @media (max-width: $table) {
     padding: 70px 0;
   }
 
@@ -23,6 +23,10 @@
       background-size: contain;
       background-repeat: no-repeat;
       background-image: url("../img/season-tickets/bg.png");
+
+      @media (max-width: $desktop) {
+        bottom: -18%;
+      }
     }
   }
 
@@ -41,10 +45,25 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media (max-width: $desktop) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__item {
     width: calc(100% / 3 - 30px);
     box-sizing: border-box;
+
+    @media (max-width: $desktop) {
+      width: 442px;
+      max-width: 100%;
+      margin-bottom: 40px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 }

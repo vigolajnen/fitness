@@ -4,6 +4,16 @@
   background-color: $default-color;
   border: 5px solid transparent;
 
+  @media (max-width: $desktop) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (max-width: $table) {
+    padding: 50px 40px 60px;
+  }
+
   &:hover {
     border-image-source: url("../img/promo/bg-gradient.svg");
     border-image-slice: 100%;
@@ -22,6 +32,7 @@
   & a {
     display: block;
     padding: 23px 45px;
+    width: 100%;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -33,6 +44,8 @@
 
     color: #102654;
     border: 2px solid #1c3374;
+
+    box-sizing: border-box;
 
     &:focus,
     &:hover {
@@ -64,6 +77,10 @@
 
     color: #103aae;
 
+    @media (max-width: $table) {
+      font-size: 48px;
+    }
+
     &::before {
       content: attr(data-price);
       position: absolute;
@@ -76,18 +93,16 @@
       font-weight: bold;
       font-size: 100px;
       line-height: 150%;
-      /* or 150px */
-
-      display: flex;
-      align-items: center;
 
       color: #e8e8e8;
 
       opacity: 0.48;
+
+      @media (max-width: $table) {
+        font-size: 80px;
+      }
     }
   }
-
-  
 
   & h3 {
     margin: 0;
@@ -99,5 +114,10 @@
     text-transform: capitalize;
 
     color: #102654;
+
+    @media (max-width: $table) {
+      font-size: 22px;
+      line-height: 110.16%;
+    }
   }
 }

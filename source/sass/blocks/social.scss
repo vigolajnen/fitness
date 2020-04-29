@@ -16,7 +16,7 @@
   }
 
   &__item {
-    margin-right: 20px;
+    margin-right: 28px;
 
     &:last-child {
       margin-right: 0;
@@ -29,5 +29,9 @@
     &:hover {
       opacity: 0.5;
     }
+  }
+
+  & svg {
+    height: 18px;
   }
 }

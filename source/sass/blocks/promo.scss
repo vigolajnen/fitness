@@ -26,6 +26,7 @@
     width: 83%;
 
     @media (max-width: $desktop) {
+      justify-content: space-between;
       padding-top: 16px;
       width: 100%;
     }
@@ -50,7 +51,13 @@
 
     @media (max-width: $desktop) {
       width: 50%;
-      padding-top: 55px;
+      padding-top: 54px;
+      padding-right: 15px;
+    }
+
+    @media (max-width: $table) {
+      width: 100%;
+      padding-right: 0;
     }
   }
 
@@ -63,7 +70,17 @@
     width: 52%;
 
     @media (max-width: $desktop) {
-      width: 50%;
+      width: 48%;
+      min-height: 391px;
+    }
+    @media (max-width: $table) {
+      display: none;
+    }
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 
@@ -75,6 +92,16 @@
     font-size: 49px;
     line-height: 49px;
     letter-spacing: 0.03em;
+
+    @media (max-width: $desktop) {
+      font-size: 34px;
+      line-height: 34px;
+    }
+
+    @media (max-width: $table) {
+      font-size: 28px;
+      line-height: 28px;
+    }
   }
 
   &__desc {
@@ -85,6 +112,10 @@
     font-size: 14px;
     line-height: 150%;
     text-align: right;
+
+    @media (max-width: $desktop) {
+      left: 0;
+    }
   }
 
   & h1 {
@@ -99,6 +130,8 @@
     color: $default-color;
 
     @media (max-width: $desktop) {
+      margin-left: auto;
+      max-width: 309px;
       font-size: 86px;
       line-height: 86px;
     }
@@ -107,12 +140,6 @@
       font-size: 78px;
       line-height: 78px;
     }
-  }
-
-  & img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
   }
 
   & button {

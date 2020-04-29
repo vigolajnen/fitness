@@ -2,10 +2,10 @@
   padding: 120px 0 227px;
 
   @media (max-width: $desktop) {
-    padding: 100px 0;
+    padding: 100px 0 207px;
   }
 
-  @media (max-width: $desktop) {
+  @media (max-width: $table) {
     padding: 70px 0;
   }
 
@@ -23,6 +23,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media (max-width: $table) {
+      padding: 0;
+    }
   }
 
   &__info {
@@ -31,6 +35,18 @@
     padding-left: 60px;
     padding-right: 85px;
     box-sizing: border-box;
+
+    @media (max-width: $desktop) {
+      width: 100%;
+      padding: 0;
+      margin: 0 auto 50px;
+      text-align: center;
+      max-width: 500px;
+    }
+
+    @media (max-width: $table) {
+      padding: 0 15px;
+    }
 
     & h2 {
       margin-bottom: 6px;
@@ -43,6 +59,12 @@
       font-weight: 300;
       font-size: 16px;
       line-height: 150%;
+
+      @media (max-width: $desktop) {
+        &:last-child {
+          display: none;
+        }
+      }
     }
   }
 
@@ -54,12 +76,32 @@
       font-weight: normal;
       font-size: 18px;
       line-height: 150%;
+
+      @media (max-width: $desktop) {
+        &:last-child {
+          display: block;
+        }
+      }
     }
   }
 
   &__pic {
     position: relative;
     width: 57%;
+
+    @media (max-width: $desktop) {
+      width: 100%;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    & img {
+      @media (max-width: $table) {
+        margin-bottom: 40px;
+      }
+    }
 
     & video {
       position: absolute;
@@ -74,6 +116,15 @@
         width: 100%;
         height: 100%;
         background: rgba(20, 54, 122, 0.5);
+      }
+
+      @media (max-width: $desktop) {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      @media (max-width: $table) {
+        position: static;
+        transform: translateX(0%);
       }
     }
   }

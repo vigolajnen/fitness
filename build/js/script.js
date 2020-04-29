@@ -1,65 +1,90 @@
 'use strict';
-const anchors = document.querySelectorAll('a[href*="#"]')
 
-for (let anchor of anchors) {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault()
+  if ('NodeList' in window && !NodeList.prototype.forEach) {
+    console.info('polyfill for IE11');
+    NodeList.prototype.forEach = function (callback, thisArg) {
+      thisArg = thisArg || window;
+      for (var i = 0; i < this.length; i++) {
+        callback.call(thisArg, this[i], i, this);
+      }
+    };
+  }
+
+var anchors = document.querySelectorAll('a[href*="#"]');
+
+for (var anchor of anchors) {
+  anchor.addEventListener('click', function (evt) {
+    evt.preventDefault()
     
-    const blockID = anchor.getAttribute('href').substr(1)
+    var blockID = anchor.getAttribute('href').substr(1)
     
     document.getElementById(blockID).scrollIntoView({
       behavior: 'smooth',
       block: 'start'
     })
   })
-}
+};
 
 
-var mySwiper = new Swiper ('#trainers', {
-    // Optional parameters
-    slidesPerView: 4,
-      centeredSlides: true,
-      spaceBetween: 30,
-      grabCursor: true,
 
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
+
+var mySwiper = new Swiper('#trainers', {
+  slidesPerView: 1,
+  spaceBetween: 10,
+
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
     },
-
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+    1199: {
+      slidesPerView: 4,
+      spaceBetween: 40,
     },
-
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-})
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
   
+var mySwiper = new Swiper('#reviews', {
+  slidesPerView: 1,
+  grabCursor: true,
+  spaceBetween: 0,
 
-var mySwiper = new Swiper ('#reviews', {
-    // Optional parameters
-    slidesPerView: 1,
-      centeredSlides: true,
-      spaceBetween: 30,
-      grabCursor: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
 
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
 
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
 
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  })
+var itemTabs = document.querySelectorAll('.tabs__item');
+var contentItems = document.querySelectorAll('.tabs__content-item');
+
+itemTabs.forEach(function(item) {
+   item.addEventListener('click', function() {
+      var id = this.getAttribute('data-tab'),
+          content = document.querySelector('.tabs__content-item[data-tab="'+id+'"]'),
+          activeItem = document.querySelector('.tabs__item.tabs__item--active'),
+          activeContent = document.querySelector('.tabs__content-item.tabs__content-item--active');
+      
+      activeItem.classList.remove('tabs__item--active');
+      item.classList.add('tabs__item--active');
+      
+      activeContent.classList.remove('tabs__content-item--active');
+      content.classList.add('tabs__content-item--active');
+   });
+});
+
+
+var phone = document.querySelector('#phone');
+  phone.addEventListener('input', function () {
+    if (phone.value.length < 16) {
+      phone.setCustomValidity('Введите номер телефона полностью');
+    } else {
+      phone.setCustomValidity('');
+    }
+  });

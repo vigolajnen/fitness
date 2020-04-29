@@ -1,6 +1,7 @@
 .advantages {
-  padding: 120px 0;
+  padding: 120px 0 30px;
   background-color: #f8f9fc;
+
 
   @media (max-width: $desktop) {
     padding: 100px 0;
@@ -10,97 +11,164 @@
     padding: 70px 0;
   }
 
+  &__container {
+    @media (max-width: $table) {
+      padding: 0;
+    }
+  }
+
   & h2 {
-    margin-bottom: 80px;
+    margin-bottom: 57px;
     text-align: center;
   }
 
-  &__items {
-    display: grid;
-    grid-template-columns: 1fr 240px 1fr;
-    grid-auto-rows: 1fr 1fr;
-    grid-gap: 1em;
+  &__inner {
+    display: flex;
 
-    display: -ms-grid;
-    -ms-grid-columns: 1fr 1em 240px 1fr;
-    -ms-grid-rows: 1fr 1em 1fr;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 53px;
+
+    @media (max-width: $desktop) {
+      flex-direction: column;
+      padding: 0;
+    }
   }
 
-  &__item {
-    // width: calc(50% - 120px);
+  &__list {
+    padding: 0;
+    padding-left: 33px;
+    margin: 0;
+    list-style: none;
 
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+
+    width: 33%;
+
+    @media (max-width: $desktop) {
+      flex-direction: row;
+      flex-grow: 1;
+      width: 100%;
+      padding-left: 0;
+    }
+
+    @media (max-width: $table) {
+      flex-direction: column;
+      margin-bottom: 50px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+
     align-items: flex-start;
+    justify-content: space-between;
 
-    &:nth-child(1) {
-      // grid-area: a;
+    min-height: 164px;
 
-      -ms-grid-column: 1;
-      -ms-grid-row: 1;
+    box-sizing: border-box;
+
+    &:first-child {
+      margin-bottom: 75px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -30px;
+        width: 100%;
+        height: 2px;
+        background-color: rgba(209, 10, 66, 0.2);
+      }
     }
-    &:nth-child(2) {
-      // grid-area: c;
 
-      -ms-grid-column: 1;
-      -ms-grid-row: 2;
+    @media (max-width: $desktop) {
+      flex-wrap: wrap;
+      width: 50%;
+
+      &:first-child {
+        margin-bottom: 0;
+        &::before {
+          background-color: transparent;
+        }
+      }
     }
-    &:nth-child(4) {
-      // grid-area: d;
 
-      -ms-grid-column: 3;
-      -ms-grid-row: 1;
-    }
-    &:nth-child(5) {
-      // grid-area: e;
+    @media (max-width: $table) {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 50px;
 
-      -ms-grid-column: 3;
-      -ms-grid-row: 2;
+      width: 100%;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
     &--center-blue {
-      -ms-grid-column: 2;
-      -ms-grid-row: 1;
-
-      grid-column-start: 2;
-
-      grid-row-start: 1;
-      grid-row-end: span 2;
-
-      padding: 65px 30px;
+      margin-top: 10px;
+      padding: 34px 34px 63px;
       flex-direction: column;
       align-items: center;
+
+      max-width: 240px;
       background-color: #1c3374;
       color: $default-color;
       text-align: center;
 
+      @media (max-width: $desktop) {
+        width: 100%;
+        max-width: 440px;
+        margin: 40px auto;
+      }
+
+      @media (max-width: $table) {
+        margin-top: 0;
+        width: 100%;
+        max-width: 100%;
+      }
+
       & .advantages__num {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+        margin-right: 0;
         color: inherit;
 
         font-style: normal;
         font-weight: bold;
         font-size: 26px;
         line-height: 150%;
+        box-sizing: border-box;
         & span {
           font-style: normal;
           font-weight: bold;
           font-size: 74px;
-          line-height: 150%;
+          line-height: 130%;
           background: $default-color;
+          box-sizing: border-box;
         }
       }
 
       & p {
+        width: 100%;
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
         line-height: 150%;
+        box-sizing: border-box;
       }
     }
 
     & h3 {
       margin: 0;
+      margin-bottom: 5px;
       font-style: normal;
       font-weight: bold;
       font-size: 22px;
@@ -117,29 +185,39 @@
   }
 
   &__num {
-    width: 30%;
-
     display: flex;
     flex-direction: column;
-    align-items: center;
+
+    margin-right: 33px;
 
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 150%;
     color: #2e35ac;
+    box-sizing: border-box;
+
+    @media (max-width: $table) {
+      align-items: center;
+    }
 
     & span {
       font-style: normal;
       font-weight: bold;
       font-size: 71px;
-      line-height: 150%;
+      line-height: 60px;
       background: $default-color;
     }
   }
 
   &__info {
-    width: 70%;
+    box-sizing: border-box;
+
+    @media (max-width: $table) {
+      text-align: center;
+      width: 100%;
+      padding: 0 45px;
+    }
   }
 }
 

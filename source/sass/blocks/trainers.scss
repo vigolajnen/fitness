@@ -1,15 +1,25 @@
 .trainers {
   padding-bottom: 90px;
+  overflow: hidden;
 
   @media (max-width: $desktop) {
     padding-bottom: 70px;
   }
 
-  @media (max-width: $desktop) {
+  @media (max-width: $table) {
     padding-bottom: 40px;
   }
 
+  &__container {
+    padding: 0 30px;
+
+    @media (max-width: $table) {
+      padding: 0;
+    }
+  }
+
   & h2 {
+    padding-left: 73px;
     margin-bottom: 50px;
   }
 
@@ -20,7 +30,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    padding-top: 80px;
+    padding-top: 75px;
     width: 100%;
     text-align: center;
     background: rgba(16, 38, 84, 0.89);
@@ -32,15 +42,53 @@
       padding-top: 15px;
       color: $default-color;
       text-align: left;
-      padding-right: 46px;
+      padding-right: 44px;
+      padding-left: 75px;
+      box-sizing: border-box;
     }
 
     & li {
-      margin-bottom: 24px;
+      margin-bottom: 15px;
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
       line-height: 150%;
+      box-sizing: border-box;
+    }
+  }
+
+  &__slider {
+    position: relative;
+    padding: 0 75px;
+    box-sizing: border-box;
+
+    @media (max-width: $table) {
+      padding: 0 40px;
+    }
+
+    & .swiper-button-prev {
+      top: 46%;
+      transform: rotate(180deg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      background-image: url("../img/icons/icon-arrow.svg");
+
+      &::after {
+        content: "";
+      }
+    }
+
+    & .swiper-button-next {
+      top: 46%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      background-image: url("../img/icons/icon-arrow.svg");
+
+      &::after {
+        content: "";
+      }
     }
   }
 
@@ -64,7 +112,7 @@
       }
 
       & h3 {
-        margin-top: 58px;
+        margin-top: 53px;
       }
     }
 

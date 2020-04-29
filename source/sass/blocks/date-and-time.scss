@@ -8,6 +8,10 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 150%;
+
+    @media (max-width: $desktop) {
+      font-size: 10px;
+    }
   }
 
   &__title {
@@ -19,6 +23,10 @@
     font-weight: normal;
     font-size: 18px;
     line-height: 150%;
+
+    @media (max-width: $desktop) {
+      font-size: 12px;
+    }
   }
 
   &__val {
@@ -27,6 +35,10 @@
     font-weight: bold;
     font-size: 40px;
     line-height: 150%;
+
+    @media (max-width: $desktop) {
+      font-size: 24px;
+    }
   }
 
   &__date {

@@ -1,24 +1,65 @@
 .reviews {
   padding-bottom: 120px;
+  overflow: hidden;
 
   @media (max-width: $desktop) {
     padding-bottom: 100px;
   }
 
-  @media (max-width: $desktop) {
+  @media (max-width: $table) {
     padding-bottom: 70px;
   }
 
   & h2 {
-    margin-bottom: 62px;
+    margin-bottom: 58px;
     text-align: center;
   }
 
   &__slider {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    box-sizing: border-box;
 
+    & .swiper-container {
+      width: 560px;
+      max-width: 100%;
+
+      @media (max-width: $table) {
+        width: 226px;
+      }
+    }
+
+    & .swiper-button-prev {
+      transform: rotate(180deg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      background-image: url("../img/icons/icon-arrow.svg");
+
+      &::after {
+        content: "";
+      }
+    }
+
+    & .swiper-button-next {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      background-image: url("../img/icons/icon-arrow.svg");
+
+      &::after {
+        content: "";
+      }
+    }
+  }
+
+  &__slider-wrapper {
+    box-sizing: border-box;
   }
 
   &__slide {
-    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
   }
 }

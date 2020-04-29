@@ -11,11 +11,14 @@
 
   & ul {
     padding: 0;
+    padding-left: 4px;
     margin: 0;
     list-style: none;
 
+    max-width: 460px;
+
     column-count: 2;
-    column-gap: 60px;
+    column-gap: 122px;
     column-rule: 1px solid #74819c;
 
     @media (max-width: $desktop) {
@@ -27,7 +30,7 @@
   }
 
   & li {
-    margin-bottom: 30px;
+    margin-bottom: 17px;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
