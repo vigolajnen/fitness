@@ -31,25 +31,33 @@
     }
 
     & .swiper-button-prev {
+      top: 46%;
       transform: rotate(180deg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-      background-image: url("../img/icons/icon-arrow.svg");
+
+      border: none;
+      background-color: transparent;
 
       &::after {
         content: "";
       }
+
+      & svg {
+        fill: transparent;
+      }
     }
 
     & .swiper-button-next {
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-      background-image: url("../img/icons/icon-arrow.svg");
+      top: 46%;
+
+      border: none;
+      background-color: transparent;
 
       &::after {
         content: "";
+      }
+
+      & svg {
+        fill: transparent;
       }
     }
   }
