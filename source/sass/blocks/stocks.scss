@@ -18,6 +18,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
     @media (max-width: $desktop) {
       flex-direction: column;
     }
@@ -44,6 +45,7 @@
     width: calc(50% - 20px);
     height: 100%;
     min-height: 465px;
+
     @media (max-width: $desktop) {
       flex-direction: row;
       justify-content: space-between;
@@ -66,7 +68,7 @@
 
     border: 5px solid transparent;
     border-image-source: url("../img/promo/bg-gradient.svg");
-    border-image-slice: 100%;
+
     border-image-width: 7px;
     border-image-repeat: round;
     border-image-slice: 10;
@@ -95,8 +97,7 @@
       font-weight: bold;
       font-size: 12px;
       line-height: 16px;
-      display: flex;
-      align-items: center;
+
       letter-spacing: 0.05em;
       text-transform: uppercase;
 
@@ -111,6 +112,7 @@
 
   &__item-header {
     color: #1c3374;
+
     & h3 {
       margin: 0;
       margin-bottom: 7px;

@@ -5,6 +5,7 @@
   @media (max-width: $desktop) {
     padding-left: 133px;
   }
+
   @media (max-width: $table) {
     padding-left: 15px;
   }
@@ -24,6 +25,7 @@
     @media (max-width: $desktop) {
       column-gap: 48px;
     }
+
     @media (max-width: $table) {
       column-count: 1;
     }

@@ -1,13 +1,13 @@
 .header-and-promo {
   padding: 31px 0 46px;
-  background: $bg-gradient;
+  background: radial-gradient(33.97% 69.22% at 16.03% 39.06%, #003d85 99.48%, #b80027 99.03%);
 
   @media (max-width: $desktop) {
     padding-top: 40px;
-    background: $bg-gradient-table;
+    background: radial-gradient(34.19% 66.65% at 20.7% 35.74%, #003d85 118.87%, #b80027 82.22%);
   }
 
   @media (max-width: $table) {
-    background: $bg-gradient-mob;
+    background: radial-gradient(97.51% 64.94% at 35.31% 34.22%, #003d85 102.07%, #b80027 96.62%);
   }
 }

@@ -98,9 +98,10 @@ gulp.task("copy", function () {
 gulp.task('scripts', function() {
   return gulp.src([
     './node_modules/picturefill/dist/picturefill.js',
-    './node_modules/svg4everybody/dist/svg4everybody.js',
     './node_modules/swiper/js/swiper.js',
-    './js/mask.js'
+    './js/mySwiper.js',
+    './js/mask.js',
+    './js/svg4everybody.js'
   ])
     .pipe(concat('vendor.min.js'))
     .pipe(gulp.dest('build/js'));

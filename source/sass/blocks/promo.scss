@@ -73,6 +73,7 @@
       width: 48%;
       min-height: 391px;
     }
+
     @media (max-width: $table) {
       display: none;
     }
@@ -150,8 +151,7 @@
     font-weight: bold;
     font-size: 12px;
     line-height: 16px;
-    display: flex;
-    align-items: center;
+
     letter-spacing: 0.05em;
     text-transform: uppercase;
     background-color: transparent;

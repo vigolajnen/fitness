@@ -122,6 +122,7 @@
         left: 50%;
         transform: translateX(-50%);
       }
+
       @media (max-width: $table) {
         position: static;
         transform: translateX(0%);
