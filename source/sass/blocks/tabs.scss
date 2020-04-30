@@ -16,6 +16,10 @@
     list-style: none;
 
     border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+
+    @media (max-width: $table) {
+      margin-bottom: 37px;
+    }
   }
 
   &__item {
@@ -41,6 +45,7 @@
     }
 
     @media (max-width: $table) {
+      padding: 10px 0 12px;
       font-size: 16px;
     }
 
@@ -67,9 +72,5 @@
     &--active {
       display: block;
     }
-  }
-
-  & h3 {
-    margin: 0;
   }
 }

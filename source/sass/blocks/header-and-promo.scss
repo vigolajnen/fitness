@@ -1,10 +1,10 @@
 .header-and-promo {
   padding: 31px 0 46px;
+  background-color: #7d1344;
   background-image: url("../img/promo/bg-promo.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: #7d1344;
 
   @media (max-width: $desktop) {
     padding-top: 40px;
@@ -12,6 +12,8 @@
   }
 
   @media (max-width: $table) {
+    padding-top: 18px;
+    padding-bottom: 76px;
     background-image: url("../img/promo/bg-promo-mob.jpg");
   }
 

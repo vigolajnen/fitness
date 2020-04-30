@@ -36,6 +36,8 @@
 
     @media (max-width: $table) {
       padding: 0 15px;
+      margin-bottom: 25px;
+      text-align: left;
     }
 
     & h2 {
@@ -55,11 +57,19 @@
           display: none;
         }
       }
+
+      @media (max-width: $table) {
+        margin-right: 17px;
+      }
     }
   }
 
   &__header {
     margin-bottom: 40px;
+
+    @media (max-width: $table) {
+      margin-bottom: 24px;
+    }
 
     & p {
       font-style: normal;
@@ -94,6 +104,7 @@
 
       @media (max-width: $table) {
         margin-bottom: 40px;
+        min-height: 313px;
       }
     }
   }
@@ -138,6 +149,7 @@
 
     @media (max-width: $table) {
       position: static;
+      max-height: 167px;
       transform: translateX(0%);
     }
 

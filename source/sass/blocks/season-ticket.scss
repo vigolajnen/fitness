@@ -1,8 +1,9 @@
 .season-ticket {
   position: relative;
-  padding: 50px 69px 60px;
+  padding: 53px 74px 70px;
   text-align: center;
   background-color: $default-color;
+  
 
   @media (max-width: $desktop) {
     display: flex;
@@ -18,6 +19,7 @@
   &::after {
     content: "";
     position: absolute;
+    z-index: 0;
     top: 0;
     left: 0;
     width: 100%;
@@ -44,15 +46,16 @@
   }
 
   &:hover {
-
-    & a {
+    & .season-ticket__link {
       border-color: $default-color;
       color: $default-color;
       background: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
     }
   }
 
-  & a {
+  &__link {
+    z-index: 1;
+    position: relative;
     display: block;
     padding: 23px 45px;
     width: 100%;
@@ -67,6 +70,8 @@
 
     color: #102654;
     border: 2px solid #1c3374;
+
+    cursor: pointer;
 
     box-sizing: border-box;
 
@@ -84,6 +89,10 @@
     line-height: 150%;
 
     color: #495a7d;
+
+    @media (max-width: $table) {
+      margin-bottom: 52px;
+    }
   }
 
   &__price {
@@ -101,7 +110,13 @@
     color: #103aae;
 
     @media (max-width: $table) {
+      margin-bottom: 30px;
+      padding-left: 13px;
       font-size: 48px;
+
+      & svg {
+        height: 33px;
+      }
     }
 
     &::before {
@@ -139,6 +154,7 @@
     color: #102654;
 
     @media (max-width: $table) {
+      margin-bottom: 6px;
       font-size: 22px;
       line-height: 110.16%;
     }

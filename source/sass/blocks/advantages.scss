@@ -19,6 +19,10 @@
   & h2 {
     margin-bottom: 57px;
     text-align: center;
+
+    @media (max-width: $table) {
+      margin-bottom: 42px;
+    }
   }
 
   &__inner {
@@ -113,8 +117,18 @@
       }
     }
 
+    & span {
+      margin-top: -10px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 150%;
+      color: #2e35ac;
+      box-sizing: border-box;
+    }
+
     &--center-blue {
-      margin-top: 10px;
+      margin-top: 13px;
       padding: 34px 34px 63px;
       flex-direction: column;
       align-items: center;
@@ -147,15 +161,16 @@
         line-height: 150%;
 
         box-sizing: border-box;
+      }
 
-        & span {
-          font-style: normal;
-          font-weight: bold;
-          font-size: 74px;
-          line-height: 130%;
-          color: $default-color;
-          box-sizing: border-box;
-        }
+      & span {
+        margin: 5px auto -6px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 74px;
+        line-height: 130%;
+        color: $default-color;
+        box-sizing: border-box;
       }
 
       & p {
@@ -193,42 +208,34 @@
 
     width: 130px;
 
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 150%;
-    color: #2e35ac;
-    box-sizing: border-box;
-
     @media (max-width: $table) {
       align-items: center;
     }
 
-    & span {
-      font-style: normal;
-      font-weight: bold;
-      font-size: 71px;
-      line-height: 60px;
-      color: $default-color;
-    }
-
     & svg {
-      width: 100%;
-      height: 60px;
+      padding-top: 8px;
+      height: 70px;
       font-style: normal;
       font-weight: bold;
       font-size: 71px;
       line-height: 60px;
+
+      @media (max-width: $table) {
+        height: 60px;
+      }
     }
   }
 
   &__info {
+    margin-top: 5px;
+    margin-left: 24px;
     box-sizing: border-box;
 
     @media (max-width: $table) {
       text-align: center;
       width: auto;
       padding: 0 45px;
+      margin: 0;
     }
   }
 }
