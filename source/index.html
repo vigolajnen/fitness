@@ -112,7 +112,9 @@
         <div class="gym__pic">
           <img src="img/gym/gym.jpg" alt="Тренажёрный зал" />
           <div class="gym__video">
-            <video src="#" poster="img/gym/gym-video.jpg"></video>
+            <video poster="img/gym/gym-video.jpg" autoplay muted loop playsinline>
+              <source src="#" type="video/mp4">
+            </video>
           </div>
         </div>
       </div>
@@ -443,138 +445,131 @@
     <section class="advantages">
       <div class="advantages__container container">
         <h2>Наши преимущества</h2>
-
         <div class="advantages__inner">
-          <ul class="advantages__list">
-            <li class="advantages__item">
-              <div class="advantages__num">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 70">
-                  <linearGradient id="grad-1">
-                    <stop class="stop" stop-color="#B80027" offset="0"></stop>
-                    <stop class="stop" stop-color="#791f74" offset="20%"></stop>
-                    <stop class="stop" stop-color="#003D85" offset="50%"></stop>
-                  </linearGradient>
+          <div class="advantages__item">
+            <div class="advantages__num">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 70">
+                <linearGradient id="grad-1">
+                  <stop class="stop" stop-color="#B80027" offset="0"></stop>
+                  <stop class="stop" stop-color="#791f74" offset="20%"></stop>
+                  <stop class="stop" stop-color="#003D85" offset="50%"></stop>
+                </linearGradient>
 
-                  <g>
-                    <text
-                      x="50%"
-                      y="50%"
-                      dy=".25em"
-                      text-anchor="middle"
-                      fill="url(#grad-1)"
-                    >
-                      900
-                    </text>
-                  </g>
-                </svg>
+                <g>
+                  <text
+                    x="50%"
+                    y="50%"
+                    dy=".25em"
+                    text-anchor="middle"
+                    fill="url(#grad-1)"
+                  >
+                    900
+                  </text>
+                </g>
+              </svg>
 
-                <span>кв/м</span>
-              </div>
-              <div class="advantages__info">
-                <h3>Площадь</h3>
-                <p>Занимайтесь без очередей и толпучки</p>
-              </div>
-            </li>
-            <li class="advantages__item">
-              <div class="advantages__num">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 70">
-                  <linearGradient id="grad-2">
-                    <stop class="stop" stop-color="#B80027" offset="0"></stop>
-                    <stop class="stop" stop-color="#791f74" offset="20%"></stop>
-                    <stop class="stop" stop-color="#003D85" offset="50%"></stop>
-                  </linearGradient>
+              <span>кв/м</span>
+            </div>
+            <div class="advantages__info">
+              <h3>Площадь</h3>
+              <p>Занимайтесь без очередей и толпучки</p>
+            </div>
+          </div>
+          <div class="advantages__item">
+            <div class="advantages__num">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 70">
+                <linearGradient id="grad-3">
+                  <stop class="stop" stop-color="#B80027" offset="0"></stop>
+                  <stop class="stop" stop-color="#791f74" offset="20%"></stop>
+                  <stop class="stop" stop-color="#003D85" offset="50%"></stop>
+                </linearGradient>
 
-                  <g>
-                    <text
-                      x="50%"
-                      y="50%"
-                      dy=".25em"
-                      text-anchor="middle"
-                      fill="url(#grad-2)"
-                    >
-                      350
-                    </text>
-                  </g>
-                </svg>
+                <g>
+                  <text
+                    x="50%"
+                    y="50%"
+                    dy=".25em"
+                    text-anchor="middle"
+                    fill="url(#grad-3)"
+                  >
+                    70
+                  </text>
+                </g>
+              </svg>
 
-                <span>мест</span>
-              </div>
-              <div class="advantages__info">
-                <h3>Комфорт</h3>
-                <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
-              </div>
-            </li>
-          </ul>
+              <span>машин</span>
+            </div>
+            <div class="advantages__info">
+              <h3>Собственная парковка</h3>
+              <p>
+                Вы всегда найдете место для своей машины на нашей парковке
+              </p>
+            </div>
+          </div>
+          <div class="advantages__item">
+            <div class="advantages__num">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 70">
+                <linearGradient id="grad-2">
+                  <stop class="stop" stop-color="#B80027" offset="0"></stop>
+                  <stop class="stop" stop-color="#791f74" offset="20%"></stop>
+                  <stop class="stop" stop-color="#003D85" offset="50%"></stop>
+                </linearGradient>
 
+                <g>
+                  <text
+                    x="50%"
+                    y="50%"
+                    dy=".25em"
+                    text-anchor="middle"
+                    fill="url(#grad-2)"
+                  >
+                    350
+                  </text>
+                </g>
+              </svg>
+
+              <span>мест</span>
+            </div>
+            <div class="advantages__info">
+              <h3>Комфорт</h3>
+              <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+            </div>
+          </div>
+          <div class="advantages__item">
+            <div class="advantages__num">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 70">
+                <linearGradient id="grad-4">
+                  <stop class="stop" stop-color="#B80027" offset="0"></stop>
+                  <stop class="stop" stop-color="#791f74" offset="20%"></stop>
+                  <stop class="stop" stop-color="#003D85" offset="50%"></stop>
+                </linearGradient>
+
+                <g>
+                  <text
+                    x="50%"
+                    y="50%"
+                    dy=".25em"
+                    text-anchor="middle"
+                    fill="url(#grad-4)"
+                  >
+                    5+
+                  </text>
+                </g>
+              </svg>
+
+              <span>лет</span>
+            </div>
+            <div class="advantages__info">
+              <h3>Тренерский опыт</h3>
+              <p>
+                Добивайтесь своих целей быстрее с профессиональным тренером
+              </p>
+            </div>
+          </div>
           <div class="advantages__item advantages__item--center-blue">
             <div class="advantages__num"><span>100</span> Тренажеров</div>
             <p>Современные тренажеры на все группы мышц</p>
           </div>
-
-          <ul class="advantages__list">
-            <li class="advantages__item">
-              <div class="advantages__num">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 70">
-                  <linearGradient id="grad-3">
-                    <stop class="stop" stop-color="#B80027" offset="0"></stop>
-                    <stop class="stop" stop-color="#791f74" offset="20%"></stop>
-                    <stop class="stop" stop-color="#003D85" offset="50%"></stop>
-                  </linearGradient>
-
-                  <g>
-                    <text
-                      x="50%"
-                      y="50%"
-                      dy=".25em"
-                      text-anchor="middle"
-                      fill="url(#grad-3)"
-                    >
-                      70
-                    </text>
-                  </g>
-                </svg>
-
-                <span>машин</span>
-              </div>
-              <div class="advantages__info">
-                <h3>Собственная парковка</h3>
-                <p>
-                  Вы всегда найдете место для своей машины на нашей парковке
-                </p>
-              </div>
-            </li>
-            <li class="advantages__item">
-              <div class="advantages__num">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 70">
-                  <linearGradient id="grad-4">
-                    <stop class="stop" stop-color="#B80027" offset="0"></stop>
-                    <stop class="stop" stop-color="#791f74" offset="20%"></stop>
-                    <stop class="stop" stop-color="#003D85" offset="50%"></stop>
-                  </linearGradient>
-
-                  <g>
-                    <text
-                      x="50%"
-                      y="50%"
-                      dy=".25em"
-                      text-anchor="middle"
-                      fill="url(#grad-4)"
-                    >
-                      5+
-                    </text>
-                  </g>
-                </svg>
-
-                <span>лет</span>
-              </div>
-              <div class="advantages__info">
-                <h3>Тренерский опыт</h3>
-                <p>
-                  Добивайтесь своих целей быстрее с профессиональным тренером
-                </p>
-              </div>
-            </li>
-          </ul>
         </div>
       </div>
     </section>

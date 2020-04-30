@@ -1,14 +1,14 @@
 .season-tickets {
-  padding: 120px 0 117px;
+  padding: 120px 0 87px;
   background-color: #f8f9fc;
   overflow: hidden;
 
   @media (max-width: $desktop) {
-    padding: 100px 0;
+    padding: 100px 0 70px;
   }
 
   @media (max-width: $table) {
-    padding: 70px 0 67px;
+    padding: 70px 0 37px;
   }
 
   &__container {
@@ -52,7 +52,6 @@
   &__items {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 
     @media (max-width: $desktop) {
       flex-direction: column;
@@ -61,13 +60,26 @@
   }
 
   &__item {
-    width: calc(100% / 3 - 30px);
+    max-width: calc(100% / 3 - 30px);
+
+    width: 100%;
     box-sizing: border-box;
+
+    margin-bottom: 30px;
+
+    &:not(:nth-child(3n)) {
+      margin-right: 30px;
+    }
 
     @media (max-width: $desktop) {
       width: 442px;
       max-width: 100%;
       margin-bottom: 40px;
+
+
+      &:not(:nth-child(3n)) {
+        margin-right: 0;
+      }
 
       &:last-child {
         margin-bottom: 0;

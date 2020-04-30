@@ -3,6 +3,11 @@
   padding: 53px 74px 70px;
   text-align: center;
   background-color: $default-color;
+
+
+  @media (max-width: 1330px) {
+    padding: 53px 50px 70px;
+  }
   
 
   @media (max-width: $desktop) {
