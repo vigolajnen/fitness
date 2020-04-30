@@ -1,8 +1,8 @@
 .season-ticket {
+  position: relative;
   padding: 50px 69px 60px;
   text-align: center;
   background-color: $default-color;
-  border: 5px solid transparent;
 
   @media (max-width: $desktop) {
     display: flex;
@@ -14,13 +14,36 @@
     padding: 50px 40px 60px;
   }
 
-  &:hover {
-    border-image-source: url("../img/promo/bg-gradient.svg");
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 
-    border-image-width: 7px;
-    border-image-repeat: round;
-    border-image-slice: 10;
-    transition: 1s;
+  &:hover::before {
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 7px;
+
+    background-image: linear-gradient(to right, #b80027 0%, #003d85 100%),
+      linear-gradient(to left, #b80027 0%, #003d85 100%);
+  }
+
+  &:hover::after {
+    background-position: 0 0, 100% 0;
+    background-repeat: no-repeat;
+
+    background-size: 7px 100%;
+
+    background-image: linear-gradient(to bottom, #b80027 0%, #003d85 100%),
+      linear-gradient(to top, #b80027 0%, #003d85 100%);
+  }
+
+  &:hover {
 
     & a {
       border-color: $default-color;
