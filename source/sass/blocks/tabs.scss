@@ -17,6 +17,10 @@
 
     border-bottom: 2px solid rgba(120, 120, 120, 0.2);
 
+    @media (max-width: $desktop) {
+      margin-bottom: 45px;
+    }
+
     @media (max-width: $table) {
       margin-bottom: 37px;
     }
@@ -42,10 +46,12 @@
 
     @media (max-width: $desktop) {
       font-size: 18px;
+      margin-right: 57px;
     }
 
     @media (max-width: $table) {
       padding: 10px 0 12px;
+      margin-right: 47px;
       font-size: 16px;
     }
 

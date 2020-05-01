@@ -4,11 +4,11 @@
   box-sizing: border-box;
 
   @media (max-width: $desktop) {
-    padding-bottom: 70px;
+    padding-bottom: 97px;
   }
 
   @media (max-width: $table) {
-    padding-bottom: 45px;
+    padding-bottom: 70px;
   }
 
   &__container {
@@ -22,6 +22,12 @@
   & h2 {
     padding-left: 73px;
     margin-bottom: 50px;
+
+    @media (max-width: $desktop) {
+      margin-bottom: 41px;
+      text-align: center;
+      padding-left: 0;
+    }
 
     @media (max-width: $table) {
       padding-left: 0;
@@ -45,6 +51,10 @@
     color: #b6bdcc;
     box-sizing: border-box;
 
+    @media (max-width: $table) {
+      padding-top: 64px;
+    }
+
     & ul {
       padding-top: 15px;
       color: $default-color;
@@ -52,6 +62,11 @@
       padding-right: 44px;
       padding-left: 75px;
       box-sizing: border-box;
+
+      @media (max-width: $table) {
+        padding-right: 35px;
+        padding-left: 52px;
+      }
     }
 
     & li {
@@ -69,6 +84,10 @@
     padding: 0 75px;
     box-sizing: border-box;
 
+    @media (max-width: $desktop) {
+      padding: 0 7px;
+    }
+
     @media (max-width: $table) {
       padding: 0 46px;
     }
@@ -84,10 +103,6 @@
         content: "";
       }
 
-      @media (max-width: $table) {
-      
-      }
-
       & svg {
         fill: transparent;
       }
@@ -101,10 +116,6 @@
 
       &::after {
         content: "";
-      }
-
-      @media (max-width: $table) {
-     
       }
 
       & svg {
@@ -127,9 +138,12 @@
     margin-bottom: 30px;
     box-sizing: border-box;
 
+    @media (max-width: $desktop) {
+      max-width: 290px;
+    }
+
     @media (max-width: $table) {
-      max-height: 232px;
-      margin-bottom: 0;
+      max-height: 273px;
       margin: 0;
     }
 
@@ -142,6 +156,10 @@
 
       & h3 {
         margin-top: 53px;
+
+        @media (max-width: $table) {
+          margin-top: 40px;
+        }
       }
     }
 

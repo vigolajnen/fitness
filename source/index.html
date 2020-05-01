@@ -43,22 +43,14 @@
                   media="(min-width: 1200px)"
                   srcset="img/promo/man.webp 1x, img/promo/man@2x.webp 2x"
                 />
-                <source
-                  type="image/webp"
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/promo/man-table.webp    1x,
-                    img/promo/man-table@2x.webp 2x
-                  "
-                />
 
-                <!-- 1х: 500px; 2x: 1000px -->
+                <!-- 1х: 324px; 2x: 648px -->
                 <img
-                  src="img/promo/man.jpg"
-                  srcset="img/promo/man@2x.jpg 2x"
-                  width="500"
-                  height="556"
-                  alt="promo"
+                  src="img/promo/man-table.jpg"
+                  srcset="img/promo/man-table@2x.jpg 2x"
+                  width="324"
+                  height="390"
+                  alt="pic"
                 />
               </picture>
             </div>
@@ -110,10 +102,36 @@
           </p>
         </div>
         <div class="gym__pic">
-          <img src="img/gym/gym.jpg" alt="Тренажёрный зал" />
+          <picture>
+            <source
+              type="image/webp"
+              media="(min-width: 1200px)"
+              srcset="img/gym/gym.webp 1x, img/gym/gym@2x.webp 2x"
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 768px)"
+              srcset="img/gym/gym-table.webp 1x, img/gym/gym-table@2x.webp 2x"
+            />
+
+            <!-- 1х: 320px; 2x: 640px -->
+            <img
+              src="img/gym/gym-mob.jpg"
+              srcset="img/gym/gym-mob@2x.jpg 2x"
+              width="320"
+              height="313"
+              alt="Тренажёрный зал"
+            />
+          </picture>
           <div class="gym__video">
-            <video poster="img/gym/gym-video.jpg" autoplay muted loop playsinline>
-              <source src="#" type="video/mp4">
+            <video
+              poster="img/gym/gym-video.jpg"
+              autoplay
+              muted
+              loop
+              playsinline
+            >
+              <source src="#" type="video/mp4" />
             </video>
           </div>
         </div>
@@ -341,7 +359,33 @@
                     <li>Опыт — 6 лет</li>
                   </ul>
                 </div>
-                <img src="img/trainers/trainer-1.jpg" alt="тренер" />
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                    srcset="
+                      img/trainers/trainer-1.webp    1x,
+                      img/trainers/trainer-1@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/trainers/trainer-4-table.webp    1x,
+                      img/trainers/trainer-4-table@2x.webp 2x
+                    "
+                  />
+
+                  <!-- 1х: 226px; 2x: 452px -->
+                  <img
+                    src="img/trainers/trainer-3-mob.jpg"
+                    srcset="img/trainers/trainer-3-mob@2x.jpg 2x"
+                    width="226"
+                    height="274"
+                    alt="тренер"
+                  />
+                </picture>
               </div>
               <div class="swiper-slide trainers__slide">
                 <h3>Алексей Лавров</h3>
@@ -353,7 +397,33 @@
                     <li>Опыт — 6 лет</li>
                   </ul>
                 </div>
-                <img src="img/trainers/trainer-2.jpg" alt="тренер" />
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                    srcset="
+                      img/trainers/trainer-2.webp    1x,
+                      img/trainers/trainer-2@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/trainers/trainer-4-table.webp    1x,
+                      img/trainers/trainer-4-table@2x.webp 2x
+                    "
+                  />
+
+                  <!-- 1х: 226px; 2x: 452px -->
+                  <img
+                    src="img/trainers/trainer-3-mob.jpg"
+                    srcset="img/trainers/trainer-3-mob@2x.jpg 2x"
+                    width="226"
+                    height="274"
+                    alt="тренер"
+                  />
+                </picture>
               </div>
               <div class="swiper-slide trainers__slide">
                 <h3>Александр Пашков</h3>
@@ -365,7 +435,33 @@
                     <li>Опыт — 6 лет</li>
                   </ul>
                 </div>
-                <img src="img/trainers/trainer-2.jpg" alt="тренер" />
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                    srcset="
+                      img/trainers/trainer-2.webp    1x,
+                      img/trainers/trainer-2@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/trainers/trainer-4-table.webp    1x,
+                      img/trainers/trainer-4-table@2x.webp 2x
+                    "
+                  />
+
+                  <!-- 1х: 226px; 2x: 452px -->
+                  <img
+                    src="img/trainers/trainer-3-mob.jpg"
+                    srcset="img/trainers/trainer-3-mob@2x.jpg 2x"
+                    width="226"
+                    height="274"
+                    alt="тренер"
+                  />
+                </picture>
               </div>
               <div class="swiper-slide trainers__slide">
                 <h3>Мария Кетова</h3>
@@ -377,7 +473,33 @@
                     <li>Опыт — 6 лет</li>
                   </ul>
                 </div>
-                <img src="img/trainers/trainer-4.jpg" alt="тренер" />
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                    srcset="
+                      img/trainers/trainer-4.webp    1x,
+                      img/trainers/trainer-4@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/trainers/trainer-4-table.webp    1x,
+                      img/trainers/trainer-4-table@2x.webp 2x
+                    "
+                  />
+
+                  <!-- 1х: 226px; 2x: 452px -->
+                  <img
+                    src="img/trainers/trainer-3-mob.jpg"
+                    srcset="img/trainers/trainer-3-mob@2x.jpg 2x"
+                    width="226"
+                    height="274"
+                    alt="тренер"
+                  />
+                </picture>
               </div>
               <div class="swiper-slide trainers__slide">
                 <h3>Анна Павлова</h3>
@@ -389,7 +511,33 @@
                     <li>Опыт — 6 лет</li>
                   </ul>
                 </div>
-                <img src="img/trainers/trainer-1.jpg" alt="тренер" />
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                    srcset="
+                      img/trainers/trainer-1.webp    1x,
+                      img/trainers/trainer-1@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/trainers/trainer-4-table.webp    1x,
+                      img/trainers/trainer-4-table@2x.webp 2x
+                    "
+                  />
+
+                  <!-- 1х: 226px; 2x: 452px -->
+                  <img
+                    src="img/trainers/trainer-3-mob.jpg"
+                    srcset="img/trainers/trainer-3-mob@2x.jpg 2x"
+                    width="226"
+                    height="274"
+                    alt="тренер"
+                  />
+                </picture>
               </div>
               <div class="swiper-slide trainers__slide">
                 <h3>Алексей Лавров</h3>
@@ -401,7 +549,33 @@
                     <li>Опыт — 6 лет</li>
                   </ul>
                 </div>
-                <img src="img/trainers/trainer-2.jpg" alt="тренер" />
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                    srcset="
+                      img/trainers/trainer-2.webp    1x,
+                      img/trainers/trainer-2@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/trainers/trainer-4-table.webp    1x,
+                      img/trainers/trainer-4-table@2x.webp 2x
+                    "
+                  />
+
+                  <!-- 1х: 226px; 2x: 452px -->
+                  <img
+                    src="img/trainers/trainer-3-mob.jpg"
+                    srcset="img/trainers/trainer-3-mob@2x.jpg 2x"
+                    width="226"
+                    height="274"
+                    alt="тренер"
+                  />
+                </picture>
               </div>
               <div class="swiper-slide trainers__slide">
                 <h3>Александр Пашков</h3>
@@ -413,7 +587,33 @@
                     <li>Опыт — 6 лет</li>
                   </ul>
                 </div>
-                <img src="img/trainers/trainer-2.jpg" alt="тренер" />
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                    srcset="
+                      img/trainers/trainer-2.webp    1x,
+                      img/trainers/trainer-2@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/trainers/trainer-4-table.webp    1x,
+                      img/trainers/trainer-4-table@2x.webp 2x
+                    "
+                  />
+
+                  <!-- 1х: 226px; 2x: 452px -->
+                  <img
+                    src="img/trainers/trainer-3-mob.jpg"
+                    srcset="img/trainers/trainer-3-mob@2x.jpg 2x"
+                    width="226"
+                    height="274"
+                    alt="тренер"
+                  />
+                </picture>
               </div>
               <div class="swiper-slide trainers__slide">
                 <h3>Мария Кетова</h3>
@@ -425,7 +625,33 @@
                     <li>Опыт — 6 лет</li>
                   </ul>
                 </div>
-                <img src="img/trainers/trainer-4.jpg" alt="тренер" />
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                    srcset="
+                      img/trainers/trainer-4.webp    1x,
+                      img/trainers/trainer-4@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/trainers/trainer-4-table.webp    1x,
+                      img/trainers/trainer-4-table@2x.webp 2x
+                    "
+                  />
+
+                  <!-- 1х: 226px; 2x: 452px -->
+                  <img
+                    src="img/trainers/trainer-3-mob.jpg"
+                    srcset="img/trainers/trainer-3-mob@2x.jpg 2x"
+                    width="226"
+                    height="274"
+                    alt="тренер"
+                  />
+                </picture>
               </div>
             </div>
           </div>

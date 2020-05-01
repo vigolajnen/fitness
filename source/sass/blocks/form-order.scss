@@ -8,22 +8,32 @@
   @media (max-width: $desktop) {
     max-width: 100%;
     padding-left: 45px;
+    padding-bottom: 66px;
   }
 
   @media (max-width: $table) {
     max-width: 100%;
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 69px;
   }
 
   &__inner {
     display: flex;
     flex-wrap: wrap;
     max-width: 410px;
+    box-sizing: border-box;
 
-    @media (max-width: 769px) {
+    @media (max-width: $desktop) {
+      max-width: 550px;
+      margin: 0 auto;
+      padding-right: 75px;
+    }
+
+    @media (max-width: $table) {
       max-width: 500px;
       margin: 0 auto;
+      padding-right: 0;
     }
   }
 
@@ -32,6 +42,14 @@
     width: 100%;
     color: inherit;
     box-sizing: border-box;
+
+    @media (max-width: $desktop) {
+      margin-bottom: 31px;
+    }
+
+    @media (max-width: $table) {
+      margin-bottom: 34px;
+    }
   }
 
   & label {
@@ -43,6 +61,10 @@
 
     &:not(:nth-child(3)) {
       margin-right: 10px;
+    }
+
+    @media (max-width: $table) {
+      margin-bottom: 34px;
     }
 
     @media (max-width: 500px) {

@@ -2,8 +2,12 @@
   padding: 45px 0;
   background-color: #030a1a;
 
+  @media (max-width: $desktop) {
+    padding: 45px 0;
+  }
+
   @media (max-width: $table) {
-    padding: 50px 0;
+    padding: 47px 0;
   }
 
   &__container {
@@ -30,30 +34,75 @@
     }
 
     @media (max-width: $table) {
-      width: 70%;
-      margin-bottom: 15px;
+      width: 100%;
+      margin-bottom: 19px;
+      column-count: 2;
     }
   }
 
   &__item {
     margin-right: 43px;
     margin-top: -8px;
+    box-sizing: border-box;
 
     &:last-child {
       margin-right: 0;
     }
 
-    &--logo {
-      margin-right: auto;
+    @media (max-width: $desktop) {
+      margin-top: 0;
+      margin-right: 34px;
     }
 
     @media (max-width: $table) {
-      margin-bottom: 30px;
-      margin-right: 40px;
+      margin-top: 0;
+      margin-bottom: 16px;
+      margin-right: 0;
+      width: 50%;
+
+      &:nth-child(1) {
+        order: 0;
+      }
+
+      &:nth-child(2) {
+        order: 2;
+      }
+
+      &:nth-child(3) {
+        order: 4;
+      }
+
+      &:nth-child(4) {
+        order: 1;
+        padding-left: 16px;
+      }
+
+      &:nth-child(5) {
+        order: 3;
+        padding-left: 16px;
+      }
+
+      &:nth-child(6) {
+        order: 5;
+        padding-left: 16px;
+      }
+    }
+
+    &--logo {
+      margin-right: auto;
+
+      @media (max-width: $desktop) {
+        margin-right: 52px;
+      }
+
+      @media (max-width: $table) {
+        margin-right: 0;
+      }
     }
   }
 
   &__link {
+    display: block;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;

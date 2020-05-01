@@ -1,13 +1,17 @@
 .advantages {
-  padding: 120px 0 30px;
+  padding: 120px 0 111px;
   background-color: #f8f9fc;
 
   @media (max-width: $desktop) {
-    padding: 100px 0;
+    padding: 100px 0 30px;
   }
 
   @media (max-width: $desktop) {
-    padding: 70px 0 20px;
+    padding: 70px 0 86px;
+  }
+
+  @media (max-width: $table) {
+    padding-bottom: 30px;
   }
 
   &__container {
@@ -20,8 +24,12 @@
     margin-bottom: 57px;
     text-align: center;
 
+    @media (max-width: $desktop) {
+      margin-bottom: 35px;
+    }
+
     @media (max-width: $table) {
-      margin-bottom: 42px;
+      margin-bottom: 39px;
     }
   }
 
@@ -35,6 +43,7 @@
     @media (max-width: $desktop) {
       padding: 0;
     }
+
     @media (max-width: 600px) {
       flex-direction: column;
     }
@@ -55,7 +64,6 @@
 
     transition: 0.5s;
 
-
     &:nth-child(3),
     &:nth-child(4) {
       padding-top: 50px;
@@ -67,11 +75,14 @@
       margin-top: -164px;
     }
 
+    @media (max-width: $desktop) {
+      margin-bottom: 0;
+    }
+
     @media (max-width: 900px) {
       flex-wrap: wrap;
       width: 50%;
       min-height: auto;
-      margin-bottom: 50px;
 
       &:nth-of-type(2n) {
         margin-left: 0;
@@ -89,7 +100,7 @@
     @media (max-width: 600px) {
       flex-direction: column;
       align-items: center;
-      margin-bottom: 50px;
+      margin-bottom: 33px;
 
       width: 100%;
     }
@@ -111,6 +122,10 @@
       font-weight: bold;
       font-size: 22px;
       line-height: 150%;
+
+      @media (max-width: 600px) {
+        margin-bottom: 0;
+      }
     }
 
     & p {
@@ -138,7 +153,9 @@
 
     @media (max-width: $desktop) {
       left: calc(100% / 3 + 60px);
+      padding: 12px 34px 35px;
     }
+
     @media (max-width: 1024px) {
       left: calc(100% / 3 + 35px);
     }
@@ -157,6 +174,11 @@
       max-width: 100%;
     }
 
+    @media (max-width: 600px) {
+      margin-top: 10px;
+      padding: 19px 67px 42px;
+    }
+
     & .advantages__num {
       margin-bottom: 30px;
       margin-right: 0;
@@ -168,6 +190,16 @@
       line-height: 150%;
 
       box-sizing: border-box;
+
+      @media (max-width: $desktop) {
+        font-size: 23px;
+        margin-bottom: 11px;
+      }
+
+      @media (max-width: 600px) {
+        margin-bottom: 9px;
+        font-size: 23px;
+      }
     }
 
     & span {
@@ -178,6 +210,10 @@
       line-height: 130%;
       color: $default-color;
       box-sizing: border-box;
+
+      @media (max-width: 600px) {
+        margin-bottom: -14px;
+      }
     }
 
     & p {
@@ -187,6 +223,10 @@
       font-size: 16px;
       line-height: 150%;
       box-sizing: border-box;
+
+      @media (max-width: $desktop) {
+        max-width: 185px;
+      }
     }
   }
 
@@ -226,8 +266,9 @@
     @media (max-width: 600px) {
       text-align: center;
       width: auto;
-      padding: 0 45px;
+      padding: 0 47px;
       margin: 0;
+      margin-top: 4px;
     }
   }
 }

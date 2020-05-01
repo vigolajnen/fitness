@@ -13,6 +13,14 @@
   & h2 {
     margin-bottom: 58px;
     text-align: center;
+
+    @media (max-width: $desktop) {
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: $table) {
+      margin-bottom: 43px;
+    }
   }
 
   &__slider {

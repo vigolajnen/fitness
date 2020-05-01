@@ -3,11 +3,13 @@
   box-sizing: border-box;
 
   @media (max-width: $desktop) {
-    padding-left: 133px;
+    // padding-left: 133px;
+    padding-left: 5%;
+    padding-bottom: 45px;
   }
 
   @media (max-width: $table) {
-    padding-left: 15px;
+    padding-left: 13px;
   }
 
   & ul {
@@ -23,6 +25,12 @@
     column-rule: 1px solid #74819c;
 
     @media (max-width: $desktop) {
+      column-gap: 99px;
+      padding: 0;
+      max-width: 530px;
+    }
+
+    @media (max-width: 900px) {
       column-gap: 48px;
     }
 
@@ -39,9 +47,13 @@
     line-height: 24px;
 
     @media (max-width: $desktop) {
-      margin-bottom: 35px;
+      margin-bottom: 20px;
       font-size: 18px;
       line-height: 152.34%;
+    }
+
+    @media (max-width: $table) {
+      margin-bottom: 19px;
     }
   }
 
@@ -53,10 +65,15 @@
     line-height: 150%;
 
     @media (max-width: $desktop) {
+      margin-bottom: 5px;
       font-style: normal;
       font-weight: bold;
       font-size: 20px;
       line-height: 150%;
+    }
+
+    @media (max-width: $table) {
+      margin-bottom: 6px;
     }
   }
 

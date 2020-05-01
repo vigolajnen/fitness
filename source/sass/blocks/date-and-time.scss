@@ -12,6 +12,7 @@
 
     @media (max-width: $desktop) {
       font-size: 10px;
+      margin-bottom: 0;
     }
 
     @media (max-width: $table) {
@@ -67,8 +68,15 @@
     font-size: 14px;
     line-height: 150%;
 
+    @media (max-width: $desktop) {
+      font-size: 10px;
+      line-height: 104%;
+    }
+
     @media (max-width: $table) {
       font-size: 10px;
+
+      line-height: 150%;
     }
   }
 }

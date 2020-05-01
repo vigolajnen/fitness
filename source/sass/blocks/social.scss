@@ -21,10 +21,15 @@
     &:last-child {
       margin-right: 0;
     }
+
+    @media (max-width: $table) {
+      margin-right: 31px;
+    }
   }
 
-
   &__link {
+    display: block;
+
     &:focus,
     &:hover {
       opacity: 0.5;
@@ -33,5 +38,10 @@
 
   & svg {
     height: 18px;
+
+    @media (max-width: $table) {
+      width: 31px;
+      height: 31px;
+    }
   }
 }
