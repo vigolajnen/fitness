@@ -101,6 +101,7 @@ gulp.task('scripts', function() {
     './node_modules/swiper/js/swiper.js',
     './js/mySwiper.js',
     './js/mask.js',
+    './js/scroll.js',
     './js/svg4everybody.js'
   ])
     .pipe(concat('vendor.min.js'))

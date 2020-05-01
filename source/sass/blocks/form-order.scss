@@ -93,6 +93,11 @@
     &::placeholder {
       color: $default-color;
     }
+
+    &:focus,
+    &:hover {
+      opacity: 0.5;
+    }
   }
 
   & input:valid {
@@ -122,5 +127,11 @@
     background-color: transparent;
     border: 3px solid $default-color;
     box-sizing: border-box;
+    cursor: pointer;
+
+    &:focus,
+    &:hover {
+      opacity: 0.5;
+    }
   }
 }

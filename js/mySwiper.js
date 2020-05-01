@@ -7,10 +7,16 @@
       640: {
         slidesPerView: 2,
         spaceBetween: 40,
+        slidesPerGroup: 2,
+        loop: true,
+        loopFillGroupWithBlank: true,
       },
       1199: {
         slidesPerView: 4,
         spaceBetween: 40,
+        slidesPerGroup: 4,
+        loop: true,
+        loopFillGroupWithBlank: true,
       },
     },
     navigation: {

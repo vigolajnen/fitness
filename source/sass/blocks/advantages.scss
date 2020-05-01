@@ -44,7 +44,7 @@
       padding: 0;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 767px) {
       flex-direction: column;
     }
   }
@@ -79,7 +79,8 @@
       margin-bottom: 0;
     }
 
-    @media (max-width: 900px) {
+    @media (max-width: 1199px) {
+      justify-content: center;
       flex-wrap: wrap;
       width: 50%;
       min-height: auto;
@@ -97,7 +98,7 @@
       }
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 767px) {
       flex-direction: column;
       align-items: center;
       margin-bottom: 33px;
@@ -123,7 +124,7 @@
       font-size: 22px;
       line-height: 150%;
 
-      @media (max-width: 600px) {
+      @media (max-width: 767px) {
         margin-bottom: 0;
       }
     }
@@ -137,46 +138,47 @@
     }
   }
 
-  &__item--center-blue {
-    position: absolute;
-    top: 0;
-    left: calc(100% / 3 + 60px);
-    margin-top: 13px;
-    padding: 34px 34px 63px;
+  &__item-inner {
+    display: flex;
     flex-direction: column;
     align-items: center;
-
+    padding: 34px 34px 63px;
     max-width: 240px;
+    margin: 0 auto;
     background-color: #1c3374;
     color: $default-color;
     text-align: center;
+    box-sizing: border-box;
 
     @media (max-width: $desktop) {
-      left: calc(100% / 3 + 60px);
       padding: 12px 34px 35px;
     }
 
-    @media (max-width: 1024px) {
-      left: calc(100% / 3 + 35px);
+    @media (max-width: 1199px) {
+      margin: 40px auto;
+      max-width: 440px;
+      width: 100%;
     }
 
-    @media (max-width: 900px) {
+    @media (max-width: 767px) {
+      padding: 19px 67px 42px;
+      margin: 0;
+    }
+  }
+
+  &__item--center-blue {
+    position: absolute;
+    top: 50%;
+    left: calc(100% / 3);
+    transform: translateY(-50%);
+
+    @media (max-width: 1199px) {
       position: relative;
       left: 0;
-      width: 100%;
-      max-width: 440px;
-      margin: 40px auto;
-    }
+      top: 0;
+      transform: translateY(0%);
 
-    @media (max-width: $table) {
-      margin-top: 0;
       width: 100%;
-      max-width: 100%;
-    }
-
-    @media (max-width: 600px) {
-      margin-top: 10px;
-      padding: 19px 67px 42px;
     }
 
     & .advantages__num {
@@ -196,7 +198,7 @@
         margin-bottom: 11px;
       }
 
-      @media (max-width: 600px) {
+      @media (max-width: 767px) {
         margin-bottom: 9px;
         font-size: 23px;
       }
@@ -211,7 +213,7 @@
       color: $default-color;
       box-sizing: border-box;
 
-      @media (max-width: 600px) {
+      @media (max-width: 767px) {
         margin-bottom: -14px;
       }
     }
@@ -261,11 +263,13 @@
     box-sizing: border-box;
 
     width: 59%;
+    max-width: 220px;
     flex-grow: 1;
 
-    @media (max-width: 600px) {
+    @media (max-width: 767px) {
       text-align: center;
-      width: auto;
+      width: 100%;
+      max-width: 350px;
       padding: 0 47px;
       margin: 0;
       margin-top: 4px;
