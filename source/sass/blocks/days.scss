@@ -1,0 +1,39 @@
+.days {
+  &__item {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 4px;
+    margin-bottom: 8px;
+    width: 148px;
+    height: 110px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+
+    color: #102654;
+    background: #f8f9fc;
+    box-sizing: border-box;
+
+    &--active {
+      color: $secondary-color;
+      border: 2.16613px solid #ED0233;
+    }
+
+    @media (max-width: $desktop) {
+      width: 146px;
+      font-size: 18px;
+      line-height: 150%;
+    }
+
+    @media (max-width: $table) {
+      width: 222px;
+      height: 80px;
+      font-size: 16px;
+      line-height: 150%;
+    }
+  }
+}

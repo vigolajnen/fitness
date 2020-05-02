@@ -29,10 +29,61 @@ itemTabs.forEach(function (item) {
 
 
 var phone = document.querySelector('#phone');
-phone.addEventListener('input', function () {
-  if (phone.value.length < 16) {
-    phone.setCustomValidity('Введите номер телефона полностью');
-  } else {
-    phone.setCustomValidity('');
+if (phone) {
+  phone.addEventListener('input', function () {
+    if (phone.value.length < 16) {
+      phone.setCustomValidity('Введите номер телефона полностью');
+    } else {
+      phone.setCustomValidity('');
+    }
+  });
+}
+
+(function () {
+  
+  var weekDays = document.querySelector('.week-days');
+  var scheduleDays = document.querySelector('.schedule__days');
+  var scheduleBtn = document.querySelector('.schedule__button');
+  var hours = document.querySelector('.hours');
+
+  function onMenuClose() {
+    scheduleBtn.classList.remove('schedule__button--open');
+    weekDays.classList.remove('week-days--open');
+    scheduleDays.classList.remove('schedule__days--close');
+    hours.classList.remove('hours--opacity');
   }
-});
+
+  if (scheduleBtn) {
+    scheduleBtn.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      scheduleBtn.classList.toggle('schedule__button--open');
+      weekDays.classList.toggle('week-days--open');
+      scheduleDays.classList.toggle('schedule__days--close');
+      hours.classList.toggle('hours--opacity');
+
+
+      if (weekDays.classList.contains('week-days--open')) {
+
+        var weekDaysItems = document.querySelectorAll('.week-days__item');
+        var firstItem = document.querySelector('.week-days__item:first-child');
+        
+        weekDaysItems.forEach(function (item) {
+          item.addEventListener('click', function (evt) {
+            var firstItemText = firstItem.innerText;
+            var text = item.innerText;
+            
+            item.innerText = firstItemText;
+            firstItem.innerText = text;
+            firstItem.classList.add('week-days__item--active');
+            
+            onMenuClose();
+          })
+        });
+      }
+    });
+
+    
+  }
+
+  
+})();

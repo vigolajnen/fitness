@@ -1,0 +1,154 @@
+.schedule {
+  padding-top: 118px;
+
+  @media (max-width: $desktop) {
+    padding-top: 80px;
+  }
+
+  @media (max-width: $table) {
+    padding-top: 70px;
+  }
+
+  & h1 {
+    margin: 0;
+    margin-bottom: 48px;
+    font-family: $mainFontTitle;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 49px;
+    line-height: 49px;
+    letter-spacing: 0.03em;
+
+    color: #102654;
+    text-align: center;
+
+    @media (max-width: $desktop) {
+      margin-bottom: 33px;
+      font-size: 42px;
+      line-height: 42px;
+    }
+
+    @media (max-width: $table) {
+      margin-bottom: 38px;
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
+
+  &__inner {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-bottom: 30px;
+    box-sizing: border-box;
+  }
+
+  &__hour {
+    width: 65px;
+    margin-top: 80px;
+
+    @media (max-width: $desktop) {
+      width: 62px;
+    }
+
+    @media (max-width: $table) {
+      width: 60px;
+      
+      margin-top: 70px;
+    }
+  }
+
+  &__week {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 65px);
+    overflow: hidden;
+    box-sizing: border-box;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-base-color: $secondary-color;
+
+    @media (max-width: $desktop) {
+      width: calc(100% - 62px);
+    }
+
+    @media (max-width: $table) {
+      width: calc(100% - 60px);
+      overflow: hidden;
+    }
+  }
+
+  &__week-days {
+    position: relative;
+    display: flex;
+    margin-left: 4px;
+    width: 1092px;
+    box-sizing: border-box;
+
+    @media (max-width: $desktop) {
+      width: 1088px;
+    }
+
+    @media (max-width: $table) {
+      max-width: 100%;
+    }
+  }
+
+  &__days {
+    display: flex;
+    margin-left: 4px;
+    box-sizing: border-box;
+
+    &--close {
+      display: none;
+    }
+
+    @media (max-width: $table) {
+      width: 230px;
+      overflow: hidden;
+    }
+  }
+
+  &__button {
+    display: none;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    padding: 10px;
+    width: 51px;
+    height: 60px;
+    margin: 4px;
+    border: 2px solid #1c3374;
+    border-radius: 0;
+    background-color: transparent;
+    box-sizing: border-box;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 19px;
+      height: 10px;
+      transform: translate(-50%, -50%);
+      background-image: url("../img/icons/icon-arrow-down.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+
+    @media (max-width: $table) {
+      display: block;
+    }
+
+    &--open {
+      &::before {
+        transform: translate(-50%, -50%) rotate(180deg);
+      }
+    }
+  }
+}
