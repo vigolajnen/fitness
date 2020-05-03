@@ -14,7 +14,7 @@
       <div class="container">
         <h1>Расписание</h1>
         <div class="schedule__inner">
-          <div class="schedule__hour hours">
+          <div class="schedule__hours hours">
             <div class="hours__item">08:00</div>
             <div class="hours__item">12:00</div>
             <div class="hours__item">18:00</div>
@@ -37,47 +37,47 @@
               ></button>
             </div>
             <div class="schedule__days">
-              <div class="days">
-                <div class="days__item">CrossFit</div>
-                <div class="days__item">Body Sculpt</div>
-                <div class="days__item">Functional</div>
-                <div class="days__item">Stretching</div>
+              <div class="days" data-weekDay="Понедельник">
+                <div class="days__item" data-hour="08:00">CrossFit</div>
+                <div class="days__item" data-hour="12:00">Body Sculpt</div>
+                <div class="days__item" data-hour="18:00">Functional</div>
+                <div class="days__item" data-hour="20:00">Stretching</div>
               </div>
-              <div class="days">
-                <div class="days__item">Aerostretching</div>
-                <div class="days__item">CrossFit</div>
-                <div class="days__item">Body Sculpt</div>
-                <div class="days__item">Functional</div>
+              <div class="days" data-weekDay="Вторник">
+                <div class="days__item" data-hour="08:00">Aerostretching</div>
+                <div class="days__item" data-hour="12:00">CrossFit</div>
+                <div class="days__item" data-hour="18:00">Body Sculpt</div>
+                <div class="days__item" data-hour="20:00">Functional</div>
               </div>
-              <div class="days">
-                <div class="days__item">Hot Iron</div>
-                <div class="days__item">Aerostretching</div>
-                <div class="days__item">CrossFit</div>
-                <div class="days__item">Body Sculpt</div>
+              <div class="days" data-weekDay="Среда">
+                <div class="days__item" data-hour="08:00">Hot Iron</div>
+                <div class="days__item" data-hour="12:00">Aerostretching</div>
+                <div class="days__item" data-hour="18:00">CrossFit</div>
+                <div class="days__item" data-hour="20:00">Body Sculpt</div>
               </div>
-              <div class="days">
-                <div class="days__item">Pilates</div>
-                <div class="days__item">Hot Iron</div>
-                <div class="days__item">Aerostretching</div>
-                <div class="days__item">CrossFit</div>
+              <div class="days" data-weekDay="Четверг">
+                <div class="days__item" data-hour="08:00">Pilates</div>
+                <div class="days__item" data-hour="12:00">Hot Iron</div>
+                <div class="days__item" data-hour="18:00">Aerostretching</div>
+                <div class="days__item" data-hour="20:00">CrossFit</div>
               </div>
-              <div class="days">
-                <div class="days__item">Stretching</div>
-                <div class="days__item">Pilates</div>
-                <div class="days__item">Hot Iron</div>
-                <div class="days__item">Aerostretching</div>
+              <div class="days" data-weekDay="Пятница">
+                <div class="days__item" data-hour="08:00">Stretching</div>
+                <div class="days__item" data-hour="12:00">Pilates</div>
+                <div class="days__item" data-hour="18:00">Hot Iron</div>
+                <div class="days__item" data-hour="20:00">Aerostretching</div>
               </div>
-              <div class="days">
-                <div class="days__item">Functional</div>
-                <div class="days__item">Stretching</div>
-                <div class="days__item">Pilates</div>
-                <div class="days__item">Hot Iron</div>
+              <div class="days" data-weekDay="Суббота">
+                <div class="days__item" data-hour="08:00">Functional</div>
+                <div class="days__item" data-hour="12:00">Stretching</div>
+                <div class="days__item" data-hour="18:00">Pilates</div>
+                <div class="days__item" data-hour="20:00">Hot Iron</div>
               </div>
-              <div class="days">
-                <div class="days__item">Body Sculpt</div>
-                <div class="days__item">Functional</div>
-                <div class="days__item">Stretching</div>
-                <div class="days__item">Pilates</div>
+              <div class="days" data-weekDay="Воскресенье">
+                <div class="days__item" data-hour="08:00">Body Sculpt</div>
+                <div class="days__item" data-hour="12:00">Functional</div>
+                <div class="days__item" data-hour="18:00">Stretching</div>
+                <div class="days__item" data-hour="20:00">Pilates</div>
               </div>
             </div>
           </div>
@@ -85,7 +85,6 @@
       </div>
     </section>
 
-    <script src="js/vendor.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/schedule.js"></script>
   </body>
 </html>

@@ -1,4 +1,10 @@
 .days {
+  display: block;
+
+  &--hidden {
+    display: none;
+  }
+
   &__item {
     flex-grow: 1;
     display: flex;
@@ -16,11 +22,12 @@
 
     color: #102654;
     background: #f8f9fc;
+    border: 2.16613px solid transparent;
     box-sizing: border-box;
 
     &--active {
       color: $secondary-color;
-      border: 2.16613px solid #ED0233;
+      border: 2.16613px solid $secondary-color;
     }
 
     @media (max-width: $desktop) {
