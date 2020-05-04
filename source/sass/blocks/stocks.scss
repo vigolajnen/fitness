@@ -1,13 +1,13 @@
 .stocks {
-  padding: 120px 0 114px;
+  padding: 120px 0 69px;
   overflow: hidden;
 
   @media (max-width: $desktop) {
-    padding: 100px 0;
+    padding: 100px 0 55px;
   }
 
   @media (max-width: $table) {
-    padding: 70px 0;
+    padding: 70px 0 25px;
   }
 
   & h2 {
