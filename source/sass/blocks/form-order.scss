@@ -1,40 +1,35 @@
 .form-order {
+  display: flex;
+  flex-wrap: wrap;
   background-color: $primary-color;
   color: $default-color;
   box-sizing: border-box;
 
   padding-left: 103px;
+  padding-right: 170px;
 
   @media (max-width: $desktop) {
     max-width: 100%;
-    padding-left: 45px;
+    padding-left: 5%;
+    padding-right: 5%;
     padding-bottom: 66px;
+  }
+
+  @media (max-width: 800px) {
+    padding-left: 88px;
+    padding-right: 118px;
   }
 
   @media (max-width: $table) {
     max-width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 88px;
+    padding-right: 118px;
     padding-bottom: 69px;
   }
 
-  &__inner {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 410px;
-    box-sizing: border-box;
-
-    @media (max-width: $desktop) {
-      max-width: 550px;
-      margin: 0 auto;
-      padding-right: 75px;
-    }
-
-    @media (max-width: $table) {
-      max-width: 500px;
-      margin: 0 auto;
-      padding-right: 0;
-    }
+  @media (max-width: 600px) {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   & h3 {

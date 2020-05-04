@@ -34,7 +34,9 @@
                 </div>
               </div>
 
-              <a href="#season-tickets" class="main-promo__link">Купить абонемент</a>
+              <a href="#season-tickets" class="main-promo__link"
+                >Купить абонемент</a
+              >
             </div>
             <div class="main-promo__pic">
               <picture>
@@ -198,14 +200,8 @@
               </div>
             </div>
           </div>
-          <div
-            class="tabs__content-item"
-            data-tab="2"
-          ></div>
-          <div
-            class="tabs__content-item"
-            data-tab="3"
-          ></div>
+          <div class="tabs__content-item" data-tab="2"></div>
+          <div class="tabs__content-item" data-tab="3"></div>
         </div>
       </div>
     </section>
@@ -867,25 +863,23 @@
           action="https://echo.htmlacademy.ru"
           method="POST"
         >
-          <div class="form-order__inner">
-            <h3>Бесплатное занятие</h3>
-            <label for="name" aria-label="Имя">
-              <input id="name" type="text" placeholder="Имя" required />
-            </label>
-            <label for="phone" aria-label="Телефон">
-              <input
-                id="phone"
-                type="text"
-                placeholder="Телефон"
-                onkeyup="javascript:mask('phone', '+7(000)000-00-00', event);"
-                value=""
-                minlength="16"
-                maxlength="16"
-                required
-              />
-            </label>
-            <button type="submit">отправить</button>
-          </div>
+          <h3>Бесплатное занятие</h3>
+          <label for="name" aria-label="Имя">
+            <input id="name" type="text" placeholder="Имя" required />
+          </label>
+          <label for="phone" aria-label="Телефон">
+            <input
+              id="phone"
+              type="text"
+              placeholder="Телефон"
+              onkeyup="javascript:mask('phone', '+7(000)000-00-00', event);"
+              value=""
+              minlength="16"
+              maxlength="16"
+              required
+            />
+          </label>
+          <button type="submit">отправить</button>
         </form>
         <section class="form-and-contacts__item contacts">
           <h3>Контакты</h3>

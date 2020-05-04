@@ -1,10 +1,11 @@
 .contacts {
   padding-left: 120px;
+  padding-right: 103px;
   box-sizing: border-box;
 
   @media (max-width: $desktop) {
-    // padding-left: 133px;
     padding-left: 5%;
+    padding-right: 5%;
     padding-bottom: 45px;
   }
 
@@ -18,8 +19,6 @@
     margin: 0;
     list-style: none;
 
-    max-width: 460px;
-
     column-count: 2;
     column-gap: 122px;
     column-rule: 1px solid #74819c;
@@ -27,7 +26,6 @@
     @media (max-width: $desktop) {
       column-gap: 99px;
       padding: 0;
-      max-width: 530px;
     }
 
     @media (max-width: 900px) {
