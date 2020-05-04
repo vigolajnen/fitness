@@ -62,16 +62,21 @@
     min-height: 164px;
     box-sizing: border-box;
 
-    // transition: 0.5s;
+    transition: 0.5s;
 
     &--last {
       padding-top: 50px;
       border-top: 2px solid rgba(209, 10, 66, 0.2);
     }
 
-    &:nth-of-type(2n) {
+    &:not(.advantages__item--center-blue):nth-of-type(2n) {
       margin-left: calc(100% * 2 / 3);
       margin-top: -164px;
+
+      @media (max-width: $desktop) {
+        margin-left: 0;
+        margin-top: 0;
+      }
     }
 
     @media (max-width: $desktop) {
