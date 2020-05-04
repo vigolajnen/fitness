@@ -14,7 +14,6 @@ var itemTabs = document.querySelectorAll('.tabs__item');
 
 if (itemTabs) {
   itemTabs.forEach(function (item) {
-    
     item.addEventListener('click', function () {
 
       var id = item.getAttribute('data-tab');
@@ -29,8 +28,6 @@ if (itemTabs) {
     });
   });
 }
-
-
 
 var phone = document.querySelector('#phone');
 if (phone) {

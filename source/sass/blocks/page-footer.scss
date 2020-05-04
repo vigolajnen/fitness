@@ -1,5 +1,5 @@
 .page-footer {
-  padding: 45px 0;
+  padding: 37px 0;
   background-color: #030a1a;
 
   @media (max-width: $desktop) {
@@ -42,7 +42,6 @@
 
   &__item {
     margin-right: 43px;
-    margin-top: -8px;
     box-sizing: border-box;
 
     &:last-child {
@@ -50,39 +49,37 @@
     }
 
     @media (max-width: $desktop) {
-      margin-top: 0;
       margin-right: 34px;
     }
 
     @media (max-width: $table) {
-      margin-top: 0;
       margin-bottom: 16px;
       margin-right: 0;
       width: 50%;
 
-      &:nth-child(1) {
+      &--logo {
         order: 0;
       }
 
-      &:nth-child(2) {
+      &--service {
         order: 2;
       }
 
-      &:nth-child(3) {
+      &--ticket {
         order: 4;
       }
 
-      &:nth-child(4) {
+      &--stock {
         order: 1;
         padding-left: 16px;
       }
 
-      &:nth-child(5) {
+      &--trainer {
         order: 3;
         padding-left: 16px;
       }
 
-      &:nth-child(6) {
+      &--schedule {
         order: 5;
         padding-left: 16px;
       }
