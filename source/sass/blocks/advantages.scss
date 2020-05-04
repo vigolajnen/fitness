@@ -67,6 +67,10 @@
     &--last {
       padding-top: 50px;
       border-top: 2px solid rgba(209, 10, 66, 0.2);
+
+      @media (max-width: $desktop) {
+        border-color: transparent;
+      }
     }
 
     &:not(.advantages__item--center-blue):nth-of-type(2n) {
