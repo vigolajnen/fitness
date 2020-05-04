@@ -45,6 +45,9 @@
 
   &__content {
     align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     width: 48%;
     padding-top: 120px;
     padding-right: 64px;
@@ -66,7 +69,6 @@
     position: relative;
     margin-bottom: 58px;
 
-    margin-left: auto;
     max-width: 385px;
     box-sizing: border-box;
 
