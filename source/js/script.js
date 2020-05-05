@@ -15,16 +15,9 @@ var itemTabs = document.querySelectorAll('.tabs__item');
 if (itemTabs) {
   itemTabs.forEach(function (item) {
     item.addEventListener('click', function () {
-
-      var id = item.getAttribute('data-tab');
-      var content = document.querySelector('.tabs__content-item[data-tab="' + id + '"]');
       var activeItem = document.querySelector('.tabs__item.tabs__item--active');
-      var activeContent = document.querySelector('.tabs__content-item.tabs__content-item--active');
-
       activeItem.classList.remove('tabs__item--active');
       item.classList.add('tabs__item--active');
-      activeContent.classList.remove('tabs__content-item--active');
-      content.classList.add('tabs__content-item--active');
     });
   });
 }
