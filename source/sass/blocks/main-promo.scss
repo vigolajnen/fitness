@@ -50,7 +50,7 @@
     align-items: flex-end;
     width: 48%;
     padding-top: 120px;
-    padding-right: 64px;
+    padding-right: 67px;
     box-sizing: border-box;
 
     @media (max-width: $desktop) {
@@ -73,7 +73,7 @@
     box-sizing: border-box;
 
     @media (max-width: $desktop) {
-      margin-bottom: 38px;
+      margin-bottom: 43px;
       max-width: 325px;
     }
 
@@ -114,6 +114,7 @@
     box-sizing: border-box;
 
     @media (max-width: $desktop) {
+      margin-bottom: 3px;
       font-size: 34px;
       line-height: 34px;
     }
@@ -137,7 +138,8 @@
     box-sizing: border-box;
 
     @media (max-width: $desktop) {
-      left: 0;
+      bottom: 6%;
+      left: -29px;
     }
 
     @media (max-width: $table) {
@@ -161,7 +163,6 @@
     text-transform: uppercase;
 
     @media (max-width: $desktop) {
-      margin-left: auto;
       max-width: 309px;
       font-size: 86px;
       line-height: 86px;
@@ -176,7 +177,7 @@
   &__link {
     display: inline-block;
     vertical-align: middle;
-    padding: 20px 45px;
+    padding: 20px 55px;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -199,7 +200,7 @@
     }
 
     @media (max-width: $desktop) {
-      padding: 20px 18px;
+      padding: 20px 32px;
       max-width: 300px;
     }
 

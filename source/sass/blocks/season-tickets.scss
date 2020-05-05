@@ -1,5 +1,5 @@
 .season-tickets {
-  padding: 120px 0 87px;
+  padding: 113px 0 87px;
   background-color: #f8f9fc;
   overflow: hidden;
 
@@ -17,7 +17,7 @@
     &::before {
       content: "";
       position: absolute;
-      bottom: -46%;
+      bottom: -38%;
       right: 0;
       width: 285px;
       height: 500px;
@@ -27,6 +27,8 @@
 
       @media (max-width: $desktop) {
         bottom: -18%;
+
+        background-image: url("../img/season-tickets/bg-table.png");
       }
 
       @media (max-width: $table) {
