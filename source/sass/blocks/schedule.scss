@@ -113,15 +113,11 @@
 
   &__button {
     display: none;
-
-    position: absolute;
-    top: 0;
-    right: 0;
-
+    position: relative;
     padding: 10px;
     width: 51px;
+    margin-left: -2px;
     height: 60px;
-    margin: 4px;
     border: 2px solid #1c3374;
     border-radius: 0;
     background-color: transparent;
@@ -149,6 +145,38 @@
       &::before {
         transform: translate(-50%, -50%) rotate(180deg);
       }
+    }
+  }
+
+  &__mob-nav {
+    display: none;
+
+    @media (max-width: $table) {
+      display: flex;
+      margin-top: 8px;
+      margin-left: 8px;
+    }
+  }
+
+  &__item-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 16px 0;
+
+    width: 173px;
+
+    font-size: 16px;
+
+    border: 2px solid #1c3374;
+    box-sizing: border-box;
+    background: $default-color;
+
+    &--active {
+      color: $default-color;
+      background-color: $secondary-color;
+      border-color: $secondary-color;
     }
   }
 }

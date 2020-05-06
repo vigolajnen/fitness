@@ -14,7 +14,7 @@ var itemTabs = document.querySelectorAll('.tabs__item');
 
 if (itemTabs) {
   itemTabs.forEach(function (item) {
-    item.addEventListener('click', function () {      
+    item.addEventListener('click', function () {
       var activeItem = document.querySelector('.tabs__item.tabs__item--active');
       activeItem.classList.remove('tabs__item--active');
       item.classList.add('tabs__item--active');

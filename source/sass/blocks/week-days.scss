@@ -8,9 +8,14 @@
 
   &--open {
     position: absolute;
+    top: 62px;
 
     & .week-days__item {
       display: flex;
+
+      &--hidden {
+        display: none;
+      }
     }
   }
 
@@ -61,11 +66,6 @@
 
       &:first-child {
         padding: 16px 0 16px 14px;
-      }
-
-      &:first-child,
-      &:last-child {
-        display: flex;
       }
     }
   }
