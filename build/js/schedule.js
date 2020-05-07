@@ -189,6 +189,8 @@
     }
   ];
 
+  var activeDayID = 1; // активный понедельник, иначе функция
+
   function createschedule() {
     var daysListElement = document.querySelector('.schedule__days');
     var weekDaysListElement = document.querySelector('.schedule__week-days');
@@ -264,6 +266,7 @@
   }
 
   createschedule();
+  
 
   var weekDays = document.querySelector('.week-days');
   var scheduleDays = document.querySelector('.schedule__days');
@@ -333,16 +336,12 @@
   }
 
   function mobWeekDays() {
-    
     weekDaysItems.forEach(function (item) {
-      item.classList.remove('week-days__item--hidden');
       item.addEventListener('click', function () {
         var day = item.innerText;
         activeDay.innerText = '';
         activeDay.innerText = day;
 
-        item.classList.add('week-days__item--hidden');
-        
         mobActiveDay(day);
 
         onMenuClose();
