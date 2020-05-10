@@ -68,7 +68,6 @@
     box-sizing: border-box;
     overflow-x: auto;
     scroll-behavior: smooth;
-    scrollbar-base-color: $secondary-color;
 
     @media (max-width: $desktop) {
       width: calc(100% - 62px);

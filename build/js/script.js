@@ -255,7 +255,6 @@ if (phone) {
       if (weekDaysListElement) {
         weekDaysListElement.appendChild(weekDayDiv);
       }
-      
 
       var divParent = document.createElement('div');
       divParent.className = 'days';
@@ -287,23 +286,23 @@ if (phone) {
       daysListElement.innerHTML = '';
       daysListElement.appendChild(scheduleFragment);
     }
-    
+
     if (hoursListElement) {
       hoursListElement.innerHTML = '';
       hoursListElement.appendChild(hoursFragment);
     }
-    
+
     if (weekDaysListElement) {
       weekDaysListElement.innerHTML = '';
       weekDaysListElement.appendChild(weekDaysFragment);
     }
-    
+
     if (mobNavElement) {
       mobNavElement.innerHTML = '';
       mobNavElement.appendChild(activeDayFragment);
 
       mobNavElement.append(btnFragment);
-    }    
+    }
   }
 
   createschedule();
