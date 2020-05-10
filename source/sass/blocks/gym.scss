@@ -153,7 +153,9 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
+
       cursor: pointer;
+      box-sizing: border-box;
     }
 
     @media (max-width: $desktop) {

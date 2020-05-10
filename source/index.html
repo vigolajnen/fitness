@@ -17,7 +17,12 @@
       <div class="container">
         <header class="page-header">
           <a class="page-header__logo logo">
-            <img src="img/logo.svg" alt="Логотип компании" />
+            <img
+              src="img/logo.svg"
+              width="89"
+              height="20"
+              alt="Логотип компании"
+            />
           </a>
           <a class="page-header__phone" href="tel:+78005555555"
             >8-800-555-55-55</a
@@ -784,7 +789,32 @@
             <div class="reviews__slider-wrapper swiper-wrapper">
               <div class="swiper-slide reviews__slide review">
                 <div class="review__pic">
-                  <img src="img/reviews/user.png" alt="pic" />
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="
+                        img/reviews/user.webp    1x,
+                        img/reviews/user@2x.webp 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/reviews/user-mob.webp    1x,
+                        img/reviews/user-mob@2x.webp 2x
+                      "
+                    />
+
+                    <!-- 1х: 68px; 2x: 136px -->
+                    <img
+                      src="img/reviews/user-mob.png"
+                      srcset="img/reviews/user-mob@2x.jpg 2x"
+                      width="80"
+                      height="80"
+                      alt="pic"
+                    />
+                  </picture>
                 </div>
                 <blockquote class="review__info">
                   <h3>Анна Орлова</h3>
@@ -797,7 +827,32 @@
               </div>
               <div class="swiper-slide reviews__slide review">
                 <div class="review__pic">
-                  <img src="img/reviews/user.png" alt="pic" />
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="
+                        img/reviews/user.webp    1x,
+                        img/reviews/user@2x.webp 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/reviews/user-mob.webp    1x,
+                        img/reviews/user-mob@2x.webp 2x
+                      "
+                    />
+
+                    <!-- 1х: 68px; 2x: 136px -->
+                    <img
+                      src="img/reviews/user-mob.png"
+                      srcset="img/reviews/user-mob@2x.jpg 2x"
+                      width="80"
+                      height="80"
+                      alt="pic"
+                    />
+                  </picture>
                 </div>
                 <blockquote class="review__info">
                   <h3>2Анна Орлова</h3>
@@ -810,7 +865,32 @@
               </div>
               <div class="swiper-slide reviews__slide review">
                 <div class="review__pic">
-                  <img src="img/reviews/user.png" alt="pic" />
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="
+                        img/reviews/user.webp    1x,
+                        img/reviews/user@2x.webp 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/reviews/user-mob.webp    1x,
+                        img/reviews/user-mob@2x.webp 2x
+                      "
+                    />
+
+                    <!-- 1х: 68px; 2x: 136px -->
+                    <img
+                      src="img/reviews/user-mob.png"
+                      srcset="img/reviews/user-mob@2x.jpg 2x"
+                      width="80"
+                      height="80"
+                      alt="pic"
+                    />
+                  </picture>
                 </div>
                 <blockquote class="review__info">
                   <h3>3Анна Орлова</h3>
@@ -823,7 +903,32 @@
               </div>
               <div class="swiper-slide reviews__slide review">
                 <div class="review__pic">
-                  <img src="img/reviews/user.png" alt="pic" />
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="
+                        img/reviews/user.webp    1x,
+                        img/reviews/user@2x.webp 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/reviews/user-mob.webp    1x,
+                        img/reviews/user-mob@2x.webp 2x
+                      "
+                    />
+
+                    <!-- 1х: 68px; 2x: 136px -->
+                    <img
+                      src="img/reviews/user-mob.png"
+                      srcset="img/reviews/user-mob@2x.jpg 2x"
+                      width="80"
+                      height="80"
+                      alt="pic"
+                    />
+                  </picture>
                 </div>
                 <blockquote class="review__info">
                   <h3>4Анна Орлова</h3>
@@ -902,7 +1007,12 @@
         <ul class="page-footer__list">
           <li class="page-footer__item page-footer__item--logo">
             <a class="logo">
-              <img src="img/logo.svg" alt="Логотип компании" />
+              <img
+                src="img/logo.svg"
+                width="89"
+                height="20"
+                alt="Логотип компании"
+              />
             </a>
           </li>
           <li class="page-footer__item page-footer__item--service">

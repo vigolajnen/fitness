@@ -52,13 +52,14 @@
 
   & label {
     flex-grow: 1;
+    margin-right: 10px;
     margin-bottom: 20px;
     width: calc(50% - 10px);
     border-bottom: 1px solid #74819c;
     box-sizing: border-box;
 
-    &:not(:nth-child(3)) {
-      margin-right: 10px;
+    &[for="phone"] {
+      margin-right: 0;
     }
 
     @media (max-width: $table) {
@@ -68,10 +69,6 @@
     @media (max-width: 500px) {
       margin-right: 0;
       width: 100%;
-
-      &:not(:nth-child(3)) {
-        margin-right: 0;
-      }
     }
   }
 
