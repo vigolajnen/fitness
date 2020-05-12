@@ -99,6 +99,8 @@
       top: 46%;
       transform: rotate(180deg);
 
+      outline: none;
+
       border: none;
       background-color: transparent;
 
@@ -117,6 +119,8 @@
 
     & .swiper-button-next {
       top: 46%;
+
+      outline: none;
 
       border: none;
       background-color: transparent;

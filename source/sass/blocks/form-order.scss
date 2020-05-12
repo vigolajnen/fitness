@@ -87,11 +87,15 @@
 
     &::placeholder {
       color: $default-color;
+      opacity: 1;
     }
 
-    &:focus,
     &:hover {
       opacity: 0.5;
+    }
+
+    &:focus {
+      opacity: 1;
     }
   }
 
@@ -123,6 +127,8 @@
     border: 3px solid $default-color;
     box-sizing: border-box;
     cursor: pointer;
+
+    outline: none;
 
     &:focus,
     &:hover {

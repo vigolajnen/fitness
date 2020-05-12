@@ -53,6 +53,10 @@
     padding-right: 67px;
     box-sizing: border-box;
 
+    @media (max-width: 1300px) {
+      padding-right: 30px;
+    }
+
     @media (max-width: $desktop) {
       width: 50%;
       padding-top: 54px;
