@@ -124,7 +124,7 @@
 
   &__video {
     position: absolute;
-    bottom: -108px;
+    top: 290px;
     left: -63px;
     height: 230px;
     box-sizing: border-box;
@@ -153,10 +153,18 @@
       background-image: url("../img/icons/icon-play.svg");
       background-repeat: no-repeat;
       background-position: center;
-      background-size: contain;
+
+      background-size: 110%;
+      border-radius: 50%;
+
+      transition: 1s;
 
       cursor: pointer;
       box-sizing: border-box;
+    }
+
+    &:hover::after {
+      background-size: contain;
     }
 
     &:hover video {
@@ -169,7 +177,7 @@
 
     @media (max-width: $desktop) {
       left: 50%;
-
+      top: auto;
       bottom: -76px;
       height: 167px;
       width: 264px;
