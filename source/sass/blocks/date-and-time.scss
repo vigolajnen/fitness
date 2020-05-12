@@ -10,7 +10,7 @@
     font-size: 14px;
     line-height: 150%;
 
-    @media (max-width: $desktop) {
+    @media (max-width: 1023px) {
       font-size: 10px;
       margin-bottom: 0;
     }
@@ -28,7 +28,7 @@
     font-size: 18px;
     line-height: 150%;
 
-    @media (max-width: $desktop) {
+    @media (max-width: 1023px) {
       font-size: 12px;
     }
 
@@ -55,7 +55,7 @@
     font-size: 40px;
     line-height: 150%;
 
-    @media (max-width: $desktop) {
+    @media (max-width: 1023px) {
       font-size: 24px;
     }
   }
@@ -68,7 +68,7 @@
     font-size: 14px;
     line-height: 150%;
 
-    @media (max-width: $desktop) {
+    @media (max-width: 1023px) {
       font-size: 10px;
       line-height: 104%;
     }

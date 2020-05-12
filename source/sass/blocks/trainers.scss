@@ -95,6 +95,16 @@
       padding: 0 46px;
     }
 
+    & .swiper-container {
+      @media (max-width: 1023px) {
+        width: 600px;
+      }
+
+      @media (max-width: $table) {
+        width: 226px;
+      }
+    }
+
     & .swiper-button-prev {
       top: 46%;
       transform: rotate(180deg);

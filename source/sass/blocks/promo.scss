@@ -90,6 +90,11 @@
 
     @media (max-width: $desktop) {
       max-width: 180px;
+      font-size: 75px;
+      line-height: 75px;
+    }
+
+    @media (max-width: $table) {
       font-size: 52px;
       line-height: 52px;
     }

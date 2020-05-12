@@ -22,11 +22,21 @@
 
     @media (max-width: $table) {
       position: absolute;
-      top: 40px;
-      left: 40px;
+      top: 15%;
+      left: 35%;
 
       width: 68px;
       padding: 0;
+    }
+
+    @media (max-width: 600px) {
+      top: 10%;
+      left: 25%;
+    }
+
+    @media (max-width: 425px) {
+      top: 40px;
+      left: 40px;
     }
 
     & img {
