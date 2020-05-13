@@ -49,7 +49,7 @@
       font-size: 18px;
       line-height: 150%;
 
-      @media (max-width: $desktop) {
+      @media (max-width: 1023px) {
         font-size: 12px;
         line-height: 150%;
       }
@@ -120,7 +120,7 @@
       opacity: 0.5;
     }
 
-    @media (max-width: $desktop) {
+    @media (max-width: 1023px) {
       font-size: 10px;
       line-height: 13px;
       margin-top: 29px;

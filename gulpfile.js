@@ -98,12 +98,12 @@ gulp.task("copy", function () {
 
 gulp.task('scripts', function() {
   return gulp.src([
+    './js/svg4everybody.js',
+    './js/mask.js',
     './node_modules/picturefill/dist/picturefill.js',
     './node_modules/swiper/js/swiper.js',
     './js/mySwiper.js',
-    './js/mask.js',
-    './js/scroll.js',
-    './js/svg4everybody.js'
+    './js/scroll.js'
   ])
     .pipe(concat('vendor.min.js'))
     .pipe(gulp.dest('build/js'));
