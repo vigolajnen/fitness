@@ -963,11 +963,18 @@
         >
           <h3>Бесплатное занятие</h3>
           <label for="name" aria-label="Имя">
-            <input id="name" type="text" placeholder="Имя" required />
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Имя"
+              required
+            />
           </label>
           <label for="phone" aria-label="Телефон">
             <input
               id="phone"
+              name="phone"
               type="text"
               placeholder="Телефон"
               onkeyup="javascript:mask('phone', '+7(000)000-00-00', event);"

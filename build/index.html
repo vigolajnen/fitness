@@ -697,10 +697,10 @@
         <form class="form-and-contacts__item form-order" action="https://echo.htmlacademy.ru" method="post">
           <h3>Бесплатное занятие</h3>
           <label for="name" aria-label="Имя">
-            <input id="name" type="text" placeholder="Имя" required="">
+            <input id="name" name="name" type="text" placeholder="Имя" required="">
           </label>
           <label for="phone" aria-label="Телефон">
-            <input id="phone" type="text" placeholder="Телефон" onkeyup="javascript:mask('phone', '+7(000)000-00-00', event);" value="" minlength="16" maxlength="16" required="">
+            <input id="phone" name="phone" type="text" placeholder="Телефон" onkeyup="javascript:mask('phone', '+7(000)000-00-00', event);" value="" minlength="16" maxlength="16" required="">
           </label>
 
           <button type="submit">отправить</button>

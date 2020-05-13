@@ -57,10 +57,6 @@
       margin-right: 0;
     }
 
-    &[for="check"] {
-      display: none;
-    }
-
     @media (max-width: $table) {
       margin-bottom: 34px;
     }
