@@ -42,6 +42,14 @@
 
     margin-bottom: 30px;
     box-sizing: border-box;
+
+    @media (max-width: $table) {
+      justify-content: center;
+      flex-wrap: nowrap;
+
+      max-width: 300px;
+      margin: 0 auto;
+    }
   }
 
   &__hours {
@@ -68,6 +76,18 @@
     box-sizing: border-box;
     overflow-x: auto;
     scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: #feebef;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $secondary-color;
+    }
 
     @media (max-width: $desktop) {
       width: calc(100% - 62px);
