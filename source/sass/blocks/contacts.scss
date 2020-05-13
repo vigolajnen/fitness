@@ -9,11 +9,11 @@
     padding-bottom: 45px;
   }
 
-  // @media (max-width: 800px) {
-  //   padding-left: 133px;
-  //   padding-right: 103px;
-  //   padding-top: 68px;
-  // }
+  @media (max-width: 769px) {
+    padding-left: 133px;
+    padding-right: 103px;
+    padding-top: 68px;
+  }
 
   @media (max-width: $table) {
     padding-left: 13px;

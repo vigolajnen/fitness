@@ -6,7 +6,7 @@
 
   @media (max-width: $desktop) {
     padding-top: 35px;
-    padding-bottom: 97px;
+    padding-bottom: 70px;
   }
 
   @media (max-width: $table) {
@@ -98,6 +98,10 @@
     & .swiper-container {
       @media (max-width: 1023px) {
         width: 600px;
+      }
+
+      @media (max-width: 769px) {
+        width: 567px;
       }
 
       @media (max-width: $table) {

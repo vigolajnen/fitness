@@ -16,16 +16,18 @@
     padding-bottom: 66px;
   }
 
-  @media (max-width: $table) {
+  @media (max-width: 769px) {
     max-width: 100%;
-    padding-left: 88px;
-    padding-right: 118px;
-    padding-bottom: 69px;
+    padding-left: 133px;
+    padding-right: 162px;
+    padding-bottom: 83px;
+    padding-top: 67px;
   }
 
   @media (max-width: 600px) {
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 73px;
   }
 
   & h3 {
