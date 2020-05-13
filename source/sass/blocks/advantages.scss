@@ -22,7 +22,7 @@
   }
 
   & h2 {
-    margin-bottom: 57px;
+    margin-bottom: 60px;
     text-align: center;
 
     @media (max-width: $desktop) {
@@ -65,8 +65,16 @@
 
     transition: 0.5s;
 
+    &:not(.advantages__item--center-blue):nth-of-type(odd) {
+      padding-left: 28px;
+
+      @media (max-width: $desktop) {
+        padding-left: 0;
+      }
+    }
+
     &--last {
-      padding-top: 50px;
+      padding-top: 70px;
       border-top: 2px solid rgba(209, 10, 66, 0.2);
 
       @media (max-width: $desktop) {
@@ -151,7 +159,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 34px 34px 63px;
+    padding: 34px 34px 40px;
     max-width: 240px;
     width: 100%;
     margin: 0 auto;
@@ -181,7 +189,7 @@
     top: 50%;
     left: calc(100% / 3);
     transform: translateY(-50%);
-    margin-top: 8px;
+    margin-top: 4px;
 
     @media (max-width: 1199px) {
       position: relative;
@@ -268,6 +276,12 @@
 
       @media (max-width: $table) {
         height: 60px;
+      }
+    }
+
+    &--three {
+      & svg {
+        width: 115px;
       }
     }
   }
