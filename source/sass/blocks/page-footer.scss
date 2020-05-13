@@ -11,6 +11,7 @@
   }
 
   &__container {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -21,26 +22,39 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 
-    width: 69%;
+    width: calc(100% - 196px);
 
-    padding: 0;
+    padding: 0 50px;
     margin: 0;
+    margin-left: 89px;
+
     list-style: none;
+    box-sizing: border-box;
 
     @media (max-width: $desktop) {
-      width: 80%;
+      justify-content: center;
+      padding: 0 15px;
+      width: calc(100% - 196px);
     }
 
     @media (max-width: $table) {
+      justify-content: center;
+      padding: 0;
+      margin: 0;
       width: 100%;
       margin-bottom: 19px;
       column-count: 2;
     }
+
+    @media (max-width: 500px) {
+      justify-content: space-between;
+    }
   }
 
   &__item {
+    margin-bottom: 10px;
     margin-right: 43px;
     box-sizing: border-box;
 
@@ -86,14 +100,21 @@
     }
 
     &--logo {
+      position: absolute;
+      top: 50%;
+      left: 103px;
+      transform: translateY(-50%);
       margin-right: auto;
 
       @media (max-width: $desktop) {
+        left: 45px;
         margin-right: 52px;
       }
 
       @media (max-width: $table) {
         margin-right: 0;
+        position: static;
+        transform: none;
       }
     }
   }
