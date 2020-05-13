@@ -154,17 +154,13 @@
       background-repeat: no-repeat;
       background-position: center;
 
-      background-size: 110%;
+      background-size: contain;
       border-radius: 50%;
 
       transition: 1s;
 
       cursor: pointer;
       box-sizing: border-box;
-    }
-
-    &:hover::after {
-      background-size: contain;
     }
 
     &:hover video {
