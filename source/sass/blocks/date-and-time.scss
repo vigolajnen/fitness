@@ -1,4 +1,8 @@
 .date-and-time {
+  @media (max-width: $table) {
+    padding-top: 2px;
+  }
+
   &__item {
     display: flex;
     flex-wrap: wrap;

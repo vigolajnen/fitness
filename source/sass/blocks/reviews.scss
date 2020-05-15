@@ -1,6 +1,6 @@
 .reviews {
   padding-top: 45px;
-  padding-bottom: 120px;
+  padding-bottom: 118px;
   overflow: hidden;
 
   @media (max-width: $desktop) {
@@ -50,7 +50,7 @@
     }
 
     & .swiper-button-prev {
-      top: 46%;
+      top: 49%;
       transform: rotate(180deg);
 
       outline: none;
@@ -58,29 +58,65 @@
       border: none;
       background-color: transparent;
 
+      @media (max-width: $desktop) {
+        top: 50%;
+        left: -6px;
+      }
+
       &::after {
         content: "";
       }
 
       & svg {
         fill: transparent;
+
+        width: 30px;
+        height: 30px;
+
+        @media (max-width: $desktop) {
+          width: 33px;
+          height: 33px;
+        }
+
+        @media (max-width: $table) {
+          width: 25px;
+          height: 25px;
+        }
       }
     }
 
     & .swiper-button-next {
-      top: 46%;
+      top: 49%;
 
       outline: none;
 
       border: none;
       background-color: transparent;
 
+      @media (max-width: $desktop) {
+        top: 50%;
+        right: -6px;
+      }
+
       &::after {
         content: "";
       }
 
       & svg {
         fill: transparent;
+
+        width: 30px;
+        height: 30px;
+
+        @media (max-width: $desktop) {
+          width: 33px;
+          height: 33px;
+        }
+
+        @media (max-width: $table) {
+          width: 25px;
+          height: 25px;
+        }
       }
     }
   }

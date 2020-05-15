@@ -17,7 +17,7 @@
   }
 
   @media (max-width: $table) {
-    padding: 50px 40px 60px;
+    padding: 49px 40px 60px;
   }
 
   &::before,
@@ -87,14 +87,14 @@
   }
 
   &__header {
-    margin-bottom: 60px;
+    margin-bottom: 65px;
 
     @media (max-width: $desktop) {
       margin-bottom: 67px;
     }
 
     @media (max-width: $table) {
-      margin-bottom: 52px;
+      margin-bottom: 55px;
     }
   }
 
@@ -121,7 +121,7 @@
 
     color: #103aae;
 
-    @media (max-width: 1260px) {
+    @media (max-width: 1400px) {
       padding: 0;
       text-align: center;
     }
