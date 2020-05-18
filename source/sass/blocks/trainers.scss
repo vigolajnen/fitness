@@ -66,6 +66,10 @@
       padding-left: 75px;
       box-sizing: border-box;
 
+      @media (max-width: 1300px) {
+        padding-left: 50px;
+      }
+
       @media (max-width: $table) {
         padding-right: 34px;
         padding-left: 52px;

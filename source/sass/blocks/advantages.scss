@@ -41,7 +41,7 @@
     justify-content: space-between;
     padding: 0 53px;
 
-    @media (max-width: $desktop) {
+    @media (max-width: 1300px) {
       padding: 0;
     }
 
@@ -135,6 +135,7 @@
       @media (max-width: $desktop) {
         margin-left: 0;
         margin-top: 0;
+        justify-content: flex-end;
       }
     }
 
