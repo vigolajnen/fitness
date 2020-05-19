@@ -126,7 +126,12 @@
     position: absolute;
     top: 290px;
     left: -63px;
-    height: 230px;
+    // height: 230px;
+
+    width: 100%;
+    height: 100%;
+    max-width: 365px;
+    max-height: 228px;
     box-sizing: border-box;
     overflow: hidden;
 
@@ -161,6 +166,11 @@
 
       cursor: pointer;
       box-sizing: border-box;
+
+      @media (max-width: $desktop) {
+        width: 75px;
+        height: 75px;
+      }
     }
 
     &:hover video {
@@ -194,6 +204,18 @@
       width: 100%;
       height: 100%;
       transition: 1s;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("../img/gym/gym-video.jpg");
+
+      @media (max-width: $table) {
+        background-image: url("../img/gym/gym-video-table.jpg");
+      }
+
+      @media (max-width: 500px) {
+        background-image: url("../img/gym/gym-video-mob.jpg");
+      }
     }
   }
 }
